@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 import HeroSection from './HeroSection';
 import About from './About';
 import Skills from './Skills';
+import Certificates from './Certificates';
 
 function Main() {
   return (
@@ -11,6 +12,7 @@ function Main() {
         <HeroSection />
         <About />
         <Skills />
+        <Certificates />
     </Container>    
   )
 }
