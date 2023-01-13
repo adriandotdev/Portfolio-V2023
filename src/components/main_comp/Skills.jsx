@@ -5,7 +5,7 @@ import ProjectTechnology from '../sub_comp/ProjectTechnology';
 
 function Skills() {
   return (
-    <Container id="skills" className="my-5">
+    <Container id="scrollspySkills" className="my-5 skills">
 
         <div>
             <h1 className='display-5 text-center mt-5 fw-bold'>Skills and Technologies</h1>

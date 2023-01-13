@@ -6,7 +6,7 @@ import ProjectTechnology from '../sub_comp/ProjectTechnology';
 
 function Projects() {
   return (
-    <Container className="mt-3 pt-5">
+    <Container id="scrollspyProjects" className="mt-3 pt-5 mb-5">
         <div>
           <h1 className="display-5 text-center fw-bold mb-2">Projects</h1>
           <hr />
@@ -102,7 +102,7 @@ function Projects() {
 
                       <Col className="col-1 m-0 p-0">
 
-                        <ProjectTechnology src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg' alt="TailwindCSS Logo"/>
+                        <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS CSS Framework Logo"/>
                       </Col>
                     </Row>
                   </div>

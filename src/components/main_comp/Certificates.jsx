@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 function Certificates() {
   return (
     
-    <Container className="my-5 pt-5">
+    <Container id="scrollspyCertificates" className="my-5 pt-5">
         <div>
           <h1 className="display-5 text-center fw-bold text-black">Certificates</h1>
           <hr />
@@ -34,6 +34,9 @@ function Certificates() {
                 </div>
                 <div className="carousel-item">
                     <img src="/images/Frontend Development Libraries.png" className="d-block w-100" alt="..." />
+                </div>
+                <div className="carousel-item">
+                    <img src="/images/Frontend Certificate - HTML.png" className="d-block w-100" alt="..." />
                 </div>
               </div>
               <button

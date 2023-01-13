@@ -5,8 +5,13 @@
 .project-icon {
   transition: all 200ms;
 }
+
 .project-icon:hover {
   transform: scale(1.2);
+}
+
+.footer-icon {
+  fill: white;
 }
 
 @media screen and (min-width: 992px) {
@@ -27,7 +32,7 @@
       min-height: 80vh;
     }
 
-    #skills {
+    .skills {
       min-height: 90vh;
     }
 }

@@ -3,9 +3,9 @@ import { ListGroup } from 'react-bootstrap'
 
 function About() {
   return (
-    <div className="about container mt-5 pt-5">
+    <div id="scrollspyAboutMe" className="about container mt-5 pt-5" data-bs-spy="scroll" data-bs-target="portfolio-navbar" data-bs-offset="0">
         <div>
-          <h1 className="display-5 text-center fw-bold mb-2">About</h1>
+          <h1  className="display-5 text-center fw-bold mb-2">About</h1>
           <hr />
         </div>
 
@@ -51,6 +51,10 @@ function About() {
                 <ListGroup.Item>
                   <p className="fs-4 p-0 m-0 text-center text-lg-start">How to start in Web Development from scratch</p>
                   <p className="fs-6 fst-italic text-secondary text-center text-lg-start">by Refocus on September 28, 2022</p>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <p className="fs-4 p-0 m-0 text-center text-lg-start">Finalist in Programming Competition</p>
+                  <p className="fs-6 fst-italic text-secondary text-center text-lg-start">by Association of Computer Science Students</p>
                 </ListGroup.Item>
               </ListGroup>
             </div>
