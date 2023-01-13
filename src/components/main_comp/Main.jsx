@@ -5,6 +5,7 @@ import HeroSection from './HeroSection';
 import About from './About';
 import Skills from './Skills';
 import Certificates from './Certificates';
+import Projects from './Projects';
 
 function Main() {
   return (
@@ -13,6 +14,7 @@ function Main() {
         <About />
         <Skills />
         <Certificates />
+        <Projects />
     </Container>    
   )
 }

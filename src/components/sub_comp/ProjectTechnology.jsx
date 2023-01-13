@@ -1,8 +1,14 @@
 import React from 'react'
 
-function ProjectTechnology() {
+function ProjectTechnology({src, alt}) {
   return (
-    <div>ProjectTechnology</div>
+    <div style={{height: '50px'}}>
+        <img
+        className="h-100 img-fluid"
+        src={src}
+        alt={alt}
+        />
+    </div>
   )
 }
 
