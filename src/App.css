@@ -2,6 +2,13 @@
   padding: 5rem 0;
 }
 
+.project-icon {
+  transition: all 200ms;
+}
+.project-icon:hover {
+  transform: scale(1.2);
+}
+
 @media screen and (min-width: 992px) {
 
   .hero-page {

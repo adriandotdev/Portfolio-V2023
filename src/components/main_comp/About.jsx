@@ -1,4 +1,5 @@
 import React from 'react'
+import { ListGroup } from 'react-bootstrap'
 
 function About() {
   return (
@@ -22,7 +23,7 @@ function About() {
                 className="img-fluid"
               />
             </div>
-
+            
             <div className="col-12 col-lg-6">
               <h1 className="display-5 text-center text-lg-start mt-3 mt-lg-0">
                 Hello! I'm Adrian Nads
@@ -39,7 +40,19 @@ function About() {
                 that come along to way.
               </p>
 
-              
+              <ListGroup>
+                <ListGroup.Item variant="dark">
+                  <h3 className='fst-italic text-center text-lg-start'>Relevant Experiences/Activities</h3>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <p className="fs-4 p-0 m-0 text-center text-lg-start">Exploring Computer Science Program Webinar</p>
+                  <p className="fs-6 fst-italic text-secondary text-center text-lg-start">by Association of Computer Science Students on September 03, 2022</p>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <p className="fs-4 p-0 m-0 text-center text-lg-start">How to start in Web Development from scratch</p>
+                  <p className="fs-6 fst-italic text-secondary text-center text-lg-start">by Refocus on September 28, 2022</p>
+                </ListGroup.Item>
+              </ListGroup>
             </div>
           </div>
         </div>

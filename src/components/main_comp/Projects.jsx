@@ -92,18 +92,18 @@ function Projects() {
                          <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL logo"/>
                       </Col>
 
-                      <div className="col-1 m-0 p-0">
+                      <Col className="col-1 m-0 p-0">
                         <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js logo"/>
-                      </div>
+                      </Col>
 
-                      <div className="col-1 m-0 p-0">
+                      <Col className="col-1 m-0 p-0">
                         <ProjectTechnology src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' alt="Node.js Logo"/>
-                      </div>
+                      </Col>
 
-                      <div className="col-1 m-0 p-0">
+                      <Col className="col-1 m-0 p-0">
 
                         <ProjectTechnology src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg' alt="TailwindCSS Logo"/>
-                      </div>
+                      </Col>
                     </Row>
                   </div>
                   <div>
