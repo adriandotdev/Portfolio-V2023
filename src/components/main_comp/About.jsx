@@ -35,18 +35,18 @@ function About() {
 
               <ListGroup>
                 <ListGroup.Item variant="dark">
-                  <h3 className='fst-italic text-center text-lg-start'>Relevant Experiences/Activities</h3>
+                  <h3 className='fst-italic text-center text-lg-start fs-3'>Relevant Experiences/Activities</h3>
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  <p className="fs-4 p-0 m-0 text-center text-lg-start">Exploring Computer Science Program Webinar</p>
+                  <h3 className="fs-4 p-0 m-0 text-center text-lg-start">Exploring Computer Science Program Webinar</h3>
                   <p className="fs-6 fst-italic text-secondary text-center text-lg-start">by Association of Computer Science Students on September 03, 2022</p>
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  <p className="fs-4 p-0 m-0 text-center text-lg-start">How to start in Web Development from scratch</p>
+                  <h3 className="fs-4 p-0 m-0 text-center text-lg-start">How to start in Web Development from scratch</h3>
                   <p className="fs-6 fst-italic text-secondary text-center text-lg-start">by Refocus on September 28, 2022</p>
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  <p className="fs-4 p-0 m-0 text-center text-lg-start">Zuitt Free Coding Bootcamp</p>
+                  <h3 className="fs-4 p-0 m-0 text-center text-lg-start">Zuitt Free Coding Bootcamp</h3>
                   <p className="fs-6 fst-italic text-secondary text-center text-lg-start">by Zuitt Coding Bootcamp on January 14, 2023</p>
                 </ListGroup.Item>
                 <ListGroup.Item>

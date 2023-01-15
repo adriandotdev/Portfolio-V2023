@@ -1,5 +1,6 @@
 .hero-page {
-  padding: 5rem 0;
+  padding: 6rem 0;
+  padding-bottom: 0;
 }
 
 .project-icon {
@@ -19,6 +20,9 @@
   max-width: 12rem
 }
 
+#nav-icon {
+  max-width: 5.5rem;
+}
 @media screen and (min-width: 992px) {
 
   .hero-page {
