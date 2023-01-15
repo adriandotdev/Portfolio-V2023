@@ -6,9 +6,11 @@ function Footer() {
       className="container-fluid bg-dark pt-5 pb-3 d-flex flex-column justify-content-center align-items-center gap-3"
     >
       <div className="container">
+                <img className='portfolio-logo mx-auto w-100' src="/images/Logo.png" alt="Adrian Marcelo portfolio logo" />
         <p className="text-white text-center fw-bold fs-3">
           Follow Me and Let's Connect!
         </p>
+
         <div className="d-flex justify-content-center gap-3">
           <div style={{height: '50px'}} className="project-icon footer-icon">
             <a target="blank" href="https://www.linkedin.com/in/adrian-marcelo/"  className="text-decoration-none h-100" >

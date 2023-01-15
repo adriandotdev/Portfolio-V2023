@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav id="portfolio-navbar" className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
       <div className="container">
-        <div className="row w-100 justify-content-between">
+        <div className="row w-100 justify-content-between align-items-center">
           <div className="col-6">
             <a className="navbar-brand fw-bold" href="#">Adrian.dev</a>
           </div>

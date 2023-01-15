@@ -11,7 +11,7 @@ function About() {
 
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-12 col-lg-6 text-center">
+            <div className="col-12 col-lg-6 text-center align-self-start">
               <img
                 src="/images/About Photo with Style.png"
                 alt=""
@@ -30,14 +30,7 @@ function About() {
               </h1>
 
               <p className="text-muted text-center text-lg-start">
-                I am a solution-oriented Web Developer from the Philippines. I do programming in general for almost 4 years, starting
-                way back in 2019, and currently a 4th year BS Computer Science student at Pamantasan Ng Cabuyao, passionate about
-                creating school and personal projects especially those related to Data Structures Algorithms, Web Development, and GUI
-                (creating user interfaces). I also realized before, that I love creating user interfaces when doing projects in Java
-                Swing, and that made me start to self-learn Web Development through the help of Youtube and other free programming
-                resources. I know that there's so much to learn in the field of the tech industry, but I am eager and willing to learn
-                new concepts and knowledge, and hoping to collaborate with other amazing developers. I am also open to new opportunities
-                that come along to way.
+                I am Adrian Nads L. Marcelo taking a Bachelor of Science in Computer Science, and currently in my senior year at Pamantasan Ng Cabuyao (University of Cabuyao). A passionate, motivated, and solution-oriented Web Developer who loves creating personal projects, connecting to like-minded developers, and constantly learning new skills. I started learning programming in 2019 during my first year in college. I am actively volunteering to code or program some of our school projects to learn and enhance my skills. I also realized that I love creating user interfaces when doing projects in Java Swing, and that made me start to self-learn Web Development through the help of Youtube and other free programming resources. We all know that there's so much to learn in the tech industry, but I am eager and willing to learn new concepts and knowledge, and hoping to collaborate with other developers. I am also open to new opportunities that will come along the way.
               </p>
 
               <ListGroup>
@@ -51,6 +44,10 @@ function About() {
                 <ListGroup.Item>
                   <p className="fs-4 p-0 m-0 text-center text-lg-start">How to start in Web Development from scratch</p>
                   <p className="fs-6 fst-italic text-secondary text-center text-lg-start">by Refocus on September 28, 2022</p>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <p className="fs-4 p-0 m-0 text-center text-lg-start">Zuitt Free Coding Bootcamp</p>
+                  <p className="fs-6 fst-italic text-secondary text-center text-lg-start">by Zuitt Coding Bootcamp on January 14, 2023</p>
                 </ListGroup.Item>
                 <ListGroup.Item>
                   <p className="fs-4 p-0 m-0 text-center text-lg-start">Finalist in Programming Competition</p>
