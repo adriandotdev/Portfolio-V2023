@@ -13,7 +13,8 @@ function Projects() {
         </div>
 
         <Container>
-        
+
+          {/* Kayamanan: THPT Project */}
           <Row className="bg-light p-md-3 mb-5">
             
             <Col className="col-12 col-lg-6 mb-3 w-100">
@@ -64,6 +65,7 @@ function Projects() {
             </Col>
           </Row>
 
+          {/* Food Hub Ordering System Project */}
           <Row className="bg-light">
             <Col className="col-12 col-lg-6 ms-auto mb-3 p-3 w-100">
               <Row className="flex-lg-row-reverse">
@@ -110,6 +112,54 @@ function Projects() {
                     <a target="blank" className="btn btn-dark" href="https://github.com/adriandotdev/Food-Hub-Software-Engineering-" role="button"
                       >View Source Code</a
                     >
+                  </div>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+          
+          {/* Flashcard Project */}
+          <Row className="bg-light p-md-3 mt-5">
+            
+            <Col className="col-12 col-lg-6 mb-3 w-100">
+              <Row className="row">
+                <Col className="col-12 col-lg-6">
+                  <img
+                    src="/images/Flashcard.png"
+                    alt=""
+                    className="img-fluid shadow"
+                  />
+                </Col>
+                <Col className="col-12 col-lg-6">
+                  <h1 className="display-6 fw-bold my-2 text-dark text-lg-end">
+                    Flashcards
+                  </h1>
+                  <p className="text-lg-end">
+                    A personal project that utilizes React.js and TailwindCSS. A simple CRUD app that enables the user to create set of questions based on their chosen category (e.g Math, and Science). Here, I learned how to use "useReducer" hook to handle complex states.
+                  </p>
+
+                  <div className="mb-3">
+                    <div className="mx-1 row justify-content-lg-end gap-3">
+                      <div className="col-1 m-0 p-0">
+                        <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" />
+                      </div>
+
+                      <div className="col-1 m-0 p-0">
+                        <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS" />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Buttons */}
+                  <div>
+                    <div className="d-lg-flex justify-content-lg-end gap-2">
+                      <a target="blank" className="btn btn-dark mx-1" href="https://github.com/adriandotdev/Flashcard" role="button"
+                        >View Source Code</a
+                      >
+                      <a target="blank" className="btn btn-outline-secondary" href="https://flashcards-go.netlify.app/" role="button"
+                        >Live Site</a
+                      >
+                    </div>
                   </div>
                 </Col>
               </Row>
