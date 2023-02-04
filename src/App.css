@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Calistoga&family=Montserrat:wght@400;500&family=Secular+One&display=swap');
+:root {
+  --dark: #000B20;
+}
 
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;
@@ -13,6 +16,8 @@
   position: relative;
   width: min-content;
   margin: 0 auto;
+  color: var(--dark);
+  font-weight: 700;
 }
 
 .section--heading__divider::after {

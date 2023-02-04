@@ -6,7 +6,8 @@ function Certificates() {
     
     <Container id="scrollspyCertificates" className="my-5 pt-5">
         <div>
-          <h1 className="display-5 text-center fw-bold text-black">Certificates</h1>
+          <h1 className="display-5 text-center fw-bold text-dark">Certificates</h1>
+          <p className='section--heading__divider'>N</p>
           <hr />
         </div>
 
@@ -17,6 +18,15 @@ function Certificates() {
               className="carousel slide carousel-dark shadow-sm"
               data-bs-ride="carousel"
             >
+              {/* Carousel Indicators */}
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+
+              {/* Carousel Inner Content */}
               <div className="carousel-inner">
                 <div className="carousel-item active">
                   <img
