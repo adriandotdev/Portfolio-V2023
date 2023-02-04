@@ -1,10 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
 function Navbar() {
   return (
-    <nav id="portfolio-navbar" className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <nav id="portfolio-navbar" className="navbar px-2 navbar-expand-lg fixed-top navbar-dark bg-dark">
       <div className="container">
-        <div className="row w-100 justify-content-evenly justify-content-sm-between align-items-center">
+        <div className="row w-100 justify-content-between justify-content-sm-between align-items-center">
           <div className="col-6">
             <a className="navbar-brand fw-bold" href="#">
               <img id="nav-icon" src="/images/Logo.png" alt="" />

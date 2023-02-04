@@ -3,12 +3,15 @@ import { Container, Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 import ProjectTechnology from '../sub_comp/ProjectTechnology';
 
+import '../../css/main.css';
+
 function Skills() {
   return (
-    <Container id="scrollspySkills" className="my-5 skills">
+    <Container id="scrollspySkills" className="my-8 skills">
 
         <div>
-            <h1 className='display-5 text-center mt-5 fw-bold'>Skills and Technologies</h1>
+            <h1 className='display-5 text-center mt-5 fw-bold text-dark'>Skills and Technologies</h1>
+            <p className='section--heading__divider'>N</p>
             <hr />
         </div>
         
@@ -17,7 +20,7 @@ function Skills() {
             <Col>
                 <div className='d-flex flex-column align-items-center'>
                     <img className="img-fluid m-0 p-0" src="/images/Teamwork.png" alt="" />
-                    <h2 className="fs-1 m-0 p-0">Teamwork</h2>
+                    <h2 className="fs-1 m-0 p-0 font-montserrat-medium">Teamwork</h2>
                     <p className="text-center">
                       A group can achieve more than a person trying to work alone. Working together is more efficient than doing tasks in parallel.
                     </p>
@@ -26,7 +29,7 @@ function Skills() {
             <Col>
                 <div className='d-flex flex-column align-items-center'>
                     <img className="img-fluid" src="/images/Communication.png" alt="" />
-                    <h2 className="fs-1 text-center">Communication</h2>
+                    <h2 className="fs-1 text-center font-montserrat-medium">Communication</h2>
                     <p className="text-center">
                       We all know that there are many jargons in a world of technology, and being able to explain and share your knowledge and ideas are really important in working in a larger team or organization.
                     </p>
@@ -35,7 +38,7 @@ function Skills() {
             <Col>
                 <div className='d-flex flex-column align-items-center'>
                     <img className="img-fluid" src="/images/Problem-Solving.png" alt="" />
-                    <h2 className="fs-1 text-center">Problem-Solving</h2>
+                    <h2 className="fs-1 text-center font-montserrat-medium">Problem-Solving</h2>
                     <p className="text-center">
                       Developing applications is not just for the user, but it is also a solution to a problem. Through my skillset, I am excited to contribute to solve a particular problem.
                     </p>
@@ -44,7 +47,7 @@ function Skills() {
         </Row>
 
         <div className="mt-5">
-                <h1 className="display-5 text-center">Technologies</h1>
+                {/* <h1 className="display-5 text-center">Technologies</h1> */}
                 <Container
                   className="container d-flex justify-content-center flex-wrap gap-3 mt-4"
                 >

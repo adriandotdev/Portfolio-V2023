@@ -1,6 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Calistoga&family=Montserrat:wght@400;500&family=Secular+One&display=swap');
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-montserrat-medium {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.section--heading__divider {
+  position: relative;
+  width: min-content;
+  margin: 0 auto;
+}
+
+.section--heading__divider::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 2px;
+  background: black;
+  position: absolute;
+  top: 50%; right: 0; left: 100%;
+}
+
+.section--heading__divider::before {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 2px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  right: 100%;
+}
 .hero-page {
   padding: 6rem 0;
   padding-bottom: 0;
+}
+
+#hero-page__subheading {
+  max-width: 45rem;
+}
+
+#about--paragraph {
+
+  font-family: 'Montserrat', sans-serif;
 }
 
 .project-icon {
