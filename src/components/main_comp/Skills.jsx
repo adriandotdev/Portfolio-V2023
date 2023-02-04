@@ -20,8 +20,8 @@ function Skills() {
             <Col>
                 <div className='d-flex flex-column align-items-center'>
                     <img className="img-fluid m-0 p-0" src="/images/Teamwork.png" alt="" />
-                    <h2 className="fs-1 m-0 p-0 font-montserrat-medium">Teamwork</h2>
-                    <p className="text-center">
+                    <h2 className="fs-1 font-montserrat-medium text-dark">Teamwork</h2>
+                    <p className="text-center font-montserrat text-bodyTextColor">
                       A group can achieve more than a person trying to work alone. Working together is more efficient than doing tasks in parallel.
                     </p>
                 </div>
@@ -29,8 +29,8 @@ function Skills() {
             <Col>
                 <div className='d-flex flex-column align-items-center'>
                     <img className="img-fluid" src="/images/Communication.png" alt="" />
-                    <h2 className="fs-1 text-center font-montserrat-medium">Communication</h2>
-                    <p className="text-center">
+                    <h2 className="fs-1 text-center font-montserrat-medium text-dark">Communication</h2>
+                    <p className="text-center font-montserrat text-bodyTextColor">
                       We all know that there are many jargons in a world of technology, and being able to explain and share your knowledge and ideas are really important in working in a larger team or organization.
                     </p>
                 </div>
@@ -38,8 +38,8 @@ function Skills() {
             <Col>
                 <div className='d-flex flex-column align-items-center'>
                     <img className="img-fluid" src="/images/Problem-Solving.png" alt="" />
-                    <h2 className="fs-1 text-center font-montserrat-medium">Problem-Solving</h2>
-                    <p className="text-center">
+                    <h2 className="fs-1 text-center font-montserrat-medium text-dark">Problem-Solving</h2>
+                    <p className="text-center font-montserrat">
                       Developing applications is not just for the user, but it is also a solution to a problem. Through my skillset, I am excited to contribute to solve a particular problem.
                     </p>
                 </div>
