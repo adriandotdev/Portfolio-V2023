@@ -11,7 +11,7 @@ function HeroSection() {
               A solution-oriented Web Developer from the Philippines
             </p>
             <div className="btn-group d-flex justify-content-center d-lg-block mt-4">
-              <button className="btn btn-darkSecondary">Download Resume</button>
+              <button className="btn btn-lg btn-darkSecondary">Download Resume</button>
             </div>
           </div>
           <div
