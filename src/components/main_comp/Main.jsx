@@ -17,7 +17,7 @@ function Main() {
   
   return (
     <>
-      <Container>
+      <Container >
         <HeroSection />
         <About />
         <Skills />

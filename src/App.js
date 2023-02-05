@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div>
-      <ThemeContext.Provider value={{isNightMode, setNightMode}}>
+      <ThemeContext.Provider value={{ isNightMode, setNightMode }}>
         <Navbar />
         <Main />      
       </ThemeContext.Provider>
