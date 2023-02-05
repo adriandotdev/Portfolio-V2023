@@ -1,12 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Calistoga&family=Montserrat:wght@400;500&family=Secular+One&display=swap');
 :root {
   --dark: #000B20;
+  --accentDarkColor: #e6d8c7;
 }
 
-body {
-  /* background: linear-gradient(to bottom, #001D53, #000B20) !important; */
+* {
+  transition: all .5s;
 }
 
+#switch {
+  background: var(--dark);
+  max-width: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-right: auto;
+  height: 1.7rem;
+  align-self: center;
+  border-radius: 1.5rem;
+  position: relative;
+  border: 1px solid white;
+}
+
+.switch--circle {
+  display: block;
+  height: inherit;
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: .6rem;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  /* transform: translateY(-6%); */
+  transition: all 200ms;
+}
+
+.switch--circle__left {
+  /* right: -2px; */
+  transform: translate(0%, -6%);
+}
+
+.switch--circle__right {
+  transform: translate(100%, -6%);
+}
+#switch__dark-icon {
+  display: block;
+  width: 1rem;
+  position: absolute;
+  left: 0;
+  /* top: 0; */
+  bottom: 1px;
+  /* transform: translateY(-50%); */
+}
+
+#switch__day-icon {
+  display: block;
+  width: 1.1rem;
+  position: absolute;
+  right: 1px;
+  top: -2px;
+}
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;
 }
