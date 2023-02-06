@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
+
+import { ThemeContext } from '../../App';
+
 function Certificates() {
+
+  const { isNightMode } = useContext(ThemeContext);
+
   return (
     
     <Container id="scrollspyCertificates" className="my-5 pt-5">
         <div>
-          <h1 className="display-5 text-center fw-bold text-dark">Certificates</h1>
-          <p className='section--heading__divider'>N</p>
-          <hr />
+          <h1 className={`display-5 text-center mt-5 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Certificates</h1>
+          <p className={`section--heading__divider mt-0 text-center ${isNightMode ? "text-contrastColor divider__darkmode" : "text-dark divider__daymode"}`}>N</p>
+          <hr className={`${isNightMode ? "border-darkModeAccentColor" : ""}`}/>
         </div>
 
         <Row className="justify-content-center">
