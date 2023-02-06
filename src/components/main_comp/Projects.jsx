@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {Container, Row, Col} from 'react-bootstrap';
 
 // User Defined Components
@@ -6,19 +6,24 @@ import ProjectTechnology from '../sub_comp/ProjectTechnology';
 
 import '../../css/main.css';
 
+import { ThemeContext } from '../../App';
+
 function Projects() {
+
+  const { isNightMode } = useContext(ThemeContext);
+
   return (
     <Container id="scrollspyProjects" className="my-8">
         <div>
-          <h1 className="display-5 text-center fw-bold mb-2 text-dark">Projects</h1>
-          <p className='section--heading__divider'>N</p>
-          <hr />
+          <h1 className={`display-5 text-center mt-5 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Projects</h1>
+          <p className={`section--heading__divider mt-0 text-center ${isNightMode ? "text-contrastColor divider__darkmode" : "text-dark divider__daymode"}`}>N</p>
+          <hr className={`${isNightMode ? "border-darkModeAccentColor" : ""}`}/>
         </div>
 
         <Container>
 
           {/* Kayamanan: THPT Project */}
-          <Row className="bg-light p-md-3 mb-5">
+          <Row className={`p-md-3 mb-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
             
             <Col className="col-12 col-lg-6 mb-3 w-100">
               <Row className="row">
@@ -30,10 +35,10 @@ function Projects() {
                   />
                 </Col>
                 <Col className="col-12 col-lg-6">
-                  <h1 className="my-2 text-dark text-lg-end font-montserrat-medium">
+                  <h1 className={`my-2 text-lg-end font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
                     Kayamanan: The Hunt for Philippine Treasures
                   </h1>
-                  <p className="text-lg-end font-montserrat text-bodyTextColor">
+                  <p className={`text-lg-end font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
                     Our thesis software for the requirement in Bachelor of Science in Computer Science. An Android game that teaches Philippine Culture and History. Our group consists of 4 members, and I'm the one who implemented the overall functionalities of the software. I learned how to use Object-Oriented design patterns such as Observer and Singleton patterns. We utilized C# programming language along with Unity Game Engine.
                   </p>
 
@@ -55,10 +60,12 @@ function Projects() {
                   {/* Buttons */}
                   <div>
                     <div className="d-lg-flex justify-content-lg-end gap-2">
-                      <a target="blank" className="btn btn-darkSecondary mx-1" href="https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures" role="button"
+
+                      <a role="button" target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures" 
                         >View Source Code</a
                       >
-                      <a target="blank" className="btn btn-outline-bodyTextColor" href="https://drive.google.com/file/d/15zMSkTLew0A-P7mSoBvX03snFDxYhahs/view?usp=share_link" role="button"
+
+                      <a target="blank" className={`btn ${isNightMode ? "btn-outline-contrastColor" : "btn-outline-bodyTextColor"}`} href="https://drive.google.com/file/d/15zMSkTLew0A-P7mSoBvX03snFDxYhahs/view?usp=share_link" role="button"
                         >APK File</a
                       >
                     </div>
@@ -69,7 +76,7 @@ function Projects() {
           </Row>
 
           {/* Food Hub Ordering System Project */}
-          <Row className="bg-light">
+          <Row className={`p-md-3 mb-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
             <Col className="col-12 col-lg-6 ms-auto mb-3 p-3 w-100">
               <Row className="flex-lg-row-reverse">
                 <Col className="col-12 col-lg-6">
@@ -81,10 +88,10 @@ function Projects() {
                 </Col>
 
                 <Col className="col-12 col-lg-6">
-                  <h1 className="my-2 text-dark font-montserrat-medium">
+                  <h1 className={`my-2 text-lg-start font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
                     Food Hub Ordering System
                   </h1>
-                  <p className="font-montserrat text-bodyTextColor">
+                  <p className={`text-lg-start font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
                     Our Software Analysis and Design, and Software Engineering 1 - 2 project. An ordering system for small food businesses. I utilized Responsive Web Design with TailwindCSS and DaisyUI for pre-made components. React.js also used for component-based UI with Node and Express.js for backend. By doing this project, I learned the State-Management through ContextAPI, and MVC pattern as the SQL as the Model, React.js as View and Express and Node as the Controller.
                   </p>
                   <div className="mb-3">
@@ -112,7 +119,7 @@ function Projects() {
                     </Row>
                   </div>
                   <div>
-                    <a target="blank" className="btn btn-darkSecondary" href="https://github.com/adriandotdev/Food-Hub-Software-Engineering-" role="button"
+                    <a target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Food-Hub-Software-Engineering-" role="button"
                       >View Source Code</a
                     >
                   </div>
@@ -122,7 +129,7 @@ function Projects() {
           </Row>
           
           {/* Flashcard Project */}
-          <Row className="bg-light p-md-3 mt-5">
+          <Row className={`p-md-3 mt-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
             
             <Col className="col-12 col-lg-6 mb-3 w-100">
               <Row className="row">
@@ -134,10 +141,10 @@ function Projects() {
                   />
                 </Col>
                 <Col className="col-12 col-lg-6">
-                  <h1 className="my-2 text-dark text-lg-end font-montserrat-medium">
+                  <h1 className={`my-2 text-lg-end font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
                     Flashcards
                   </h1>
-                  <p className="text-lg-end font-montserrat text-bodyTextColor">
+                  <p className={`text-lg-end font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
                     A personal project that utilizes React.js and TailwindCSS. A simple CRUD app that enables the user to create set of questions based on their chosen category (e.g Math, and Science). Here, I learned how to use "useReducer" hook to handle complex states.
                   </p>
 
@@ -156,10 +163,11 @@ function Projects() {
                   {/* Buttons */}
                   <div>
                     <div className="d-lg-flex justify-content-lg-end gap-2">
-                      <a target="blank" className="btn btn-darkSecondary mx-1" href="https://github.com/adriandotdev/Flashcard" role="button"
+                      <a role="button" target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures" 
                         >View Source Code</a
                       >
-                      <a target="blank" className="btn btn-outline-bodyTextColor" href="https://flashcards-go.netlify.app/" role="button"
+
+                      <a target="blank" className={`btn ${isNightMode ? "btn-outline-contrastColor" : "btn-outline-bodyTextColor"}`} href="https://drive.google.com/file/d/15zMSkTLew0A-P7mSoBvX03snFDxYhahs/view?usp=share_link" role="button"
                         >Live Site</a
                       >
                     </div>
