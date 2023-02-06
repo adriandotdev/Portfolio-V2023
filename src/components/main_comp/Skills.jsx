@@ -26,7 +26,7 @@ function Skills() {
                     <img className="img-fluid m-0 p-0" src="/images/Teamwork.png" alt="" />
                     <h2 className={`fs-1 font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Teamwork</h2>
                     <p className={`text-center font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
-                      A group can achieve more than a person trying to work alone. Working together is more efficient than doing tasks in parallel.
+                      I can work more collaboratively. A group can achieve more than a person trying to work alone. Working together is more efficient than doing tasks seperately.
                     </p>
                 </div>
             </Col>
@@ -35,7 +35,7 @@ function Skills() {
                     <img className="img-fluid" src="/images/Communication.png" alt="" />
                     <h2 className={`fs-1 font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Communication</h2>
                     <p className={`text-center font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
-                      We all know that there are many jargons in a world of technology, and being able to explain and share your knowledge and ideas are really important in working in a larger team or organization.
+                      I can fully express my ideas. Communication is not just a one-way process. It is also significant to hear suggestions from others that might help to solve a particular problem.
                     </p>
                 </div>
             </Col>
@@ -44,7 +44,7 @@ function Skills() {
                     <img className="img-fluid" src="/images/Problem-Solving.png" alt="" />
                     <h2 className={`fs-1 font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Problem-Solving</h2>
                     <p className={`text-center font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
-                      Developing applications is not just for the user, but it is also a solution to a problem. Through my skillset, I am excited to contribute to solve a particular problem.
+                      I am solution-oriented and can puzzle out the task within a given timeframe and not just accomplishing it but ensuring its reliability and efficiency.
                     </p>
                 </div>
             </Col>

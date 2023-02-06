@@ -39,7 +39,7 @@ function Projects() {
                     Kayamanan: The Hunt for Philippine Treasures
                   </h1>
                   <p className={`text-lg-end font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
-                    Our thesis software for the requirement in Bachelor of Science in Computer Science. An Android game that teaches Philippine Culture and History. Our group consists of 4 members, and I'm the one who implemented the overall functionalities of the software. I learned how to use Object-Oriented design patterns such as Observer and Singleton patterns. We utilized C# programming language along with Unity Game Engine.
+                    The software of our Thesis for the requirement in BS Computer Science degree. A 2D Android role-playing game that teaches Philippine Culture and History. I am the one assigned to implement overall functionalities of the software. During the development, I learned how to use Object-Oriented design such as Observer and Singleton patterns.
                   </p>
 
                   <div className="mb-3">
@@ -92,7 +92,7 @@ function Projects() {
                     Food Hub Ordering System
                   </h1>
                   <p className={`text-lg-start font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
-                    Our Software Analysis and Design, and Software Engineering 1 - 2 project. An ordering system for small food businesses. I utilized Responsive Web Design with TailwindCSS and DaisyUI for pre-made components. React.js also used for component-based UI with Node and Express.js for backend. By doing this project, I learned the State-Management through ContextAPI, and MVC pattern as the SQL as the Model, React.js as View and Express and Node as the Controller.
+                    Our System Analysis and Design, and Software Engineering project. An ordering system for small food businesses. I utilized Responsive Web Design with TailwindCSS, and DaisyUI for pre-made components. React.js also used for component-based UI with Node and Express.js for backend. By doing this project, I learned the State-Management through ContextAPI, and MVC pattern as the SQL as the Model, React.js as View and Express and Node as the Controller.
                   </p>
                   <div className="mb-3">
                     <Row className="justify-content-start gap-2 mx-1">
@@ -145,7 +145,7 @@ function Projects() {
                     Flashcards
                   </h1>
                   <p className={`text-lg-end font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
-                    A personal project that utilizes React.js and TailwindCSS. A simple CRUD app that enables the user to create set of questions based on their chosen category (e.g Math, and Science). Here, I learned how to use "useReducer" hook to handle complex states.
+                    A simple C.R.U.D app that enables the user to create set of questions based on their chosen category. Here, I learned how to use "useReducer" hook to handle complex states.
                   </p>
 
                   <div className="mb-3">

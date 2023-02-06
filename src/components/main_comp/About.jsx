@@ -16,7 +16,7 @@ function About() {
         </div>
 
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row align-items-start">
             <div className="col-12 col-xl-6 text-center align-self-start">
               <img
                 src="/images/About Photo Square.jpg"
@@ -36,7 +36,7 @@ function About() {
               </h1>
 
               <p id='about--paragraph' className={`text-center text-xl-start ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
-                I am Adrian Nads L. Marcelo taking a Bachelor of Science in Computer Science, and currently in my senior year at Pamantasan Ng Cabuyao (University of Cabuyao). A passionate, motivated, and solution-oriented Web Developer who loves creating personal projects, connecting to like-minded developers, and constantly learning new skills. I started learning programming in 2019 during my first year in college. I am actively volunteering to code or program some of our school projects to learn and enhance my skills. I also realized that I love creating user interfaces when doing projects in Java Swing, and that made me start to self-learn Web Development through the help of Youtube and other free programming resources. We all know that there's so much to learn in the tech industry, but I am eager and willing to learn new concepts and knowledge, and hoping to collaborate with other developers. I am also open to new opportunities that will come along the way.
+                I'm taking a Bachelor of Science in Computer Science and am currently in my senior year at Pamantasan ng Cabuyao (University of Cabuyao). A passionate, motivated, and solution-oriented Web Developer who loves to create personal projects, connect to like-minded individuals, and constantly learn new skills. I started to learn to program way back in my first year of college in 2019. To be comfortable with it, I am actively initiating to be the one to develop some of our school projects. Creating those projects made me realize that I enjoy creating user interfaces and made me decide to start learning Web Development. With that, I am open to every opportunity that will come along the way.
               </p>
 
               <ListGroup>
