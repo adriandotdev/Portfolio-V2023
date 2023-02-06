@@ -163,11 +163,11 @@ function Projects() {
                   {/* Buttons */}
                   <div>
                     <div className="d-lg-flex justify-content-lg-end gap-2">
-                      <a role="button" target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures" 
+                      <a role="button" target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Flashcard" 
                         >View Source Code</a
                       >
 
-                      <a target="blank" className={`btn ${isNightMode ? "btn-outline-contrastColor" : "btn-outline-bodyTextColor"}`} href="https://drive.google.com/file/d/15zMSkTLew0A-P7mSoBvX03snFDxYhahs/view?usp=share_link" role="button"
+                      <a target="blank" className={`btn ${isNightMode ? "btn-outline-contrastColor" : "btn-outline-bodyTextColor"}`} href="https://flashcards-go.netlify.app/" role="button"
                         >Live Site</a
                       >
                     </div>
