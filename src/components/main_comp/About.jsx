@@ -19,14 +19,14 @@ function About() {
           <div className="row align-items-center">
             <div className="col-12 col-lg-6 text-center align-self-start">
               <img
-                src="/images/About Photo with Style.png"
+                src="/images/About Photo Square.jpg"
                 alt=""
-                className="img-fluid d-none"
+                className="img-fluid d-block d-lg-none"
               />
               <img
-                src="/images/About Photo with Style.png"
+                src="/images/About Photo.jpg"
                 alt=""
-                className="img-fluid"
+                className="img-fluid d-none d-lg-block"
               />
             </div>
             
