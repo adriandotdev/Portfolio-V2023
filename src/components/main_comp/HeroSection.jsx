@@ -24,11 +24,16 @@ function HeroSection() {
             className="col align-self-center d-none d-xl-block col-md-5 col-lg-4"
           >
             <div className="container text-center">
-              <img
-                src="/images/Nads CV Photo.jpg"
-                alt=""
-                className="img-fluid rounded-circle"
-              />
+
+              <div className={`${isNightMode ? "image-background__darkmode" : "image-background__daymode"}`}>
+                
+                <img
+                  src="/images/hero-section-main-image.png"
+                  alt=""
+                  className="hero--image img-fluid"
+                />
+              </div>
+              
             </div>
           </div>
         </div>

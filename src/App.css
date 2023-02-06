@@ -129,6 +129,28 @@
   padding-bottom: 0;
 }
 
+.image-background__darkmode {
+  position: relative;
+  background: var(--accentDarkColor);
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.image-background__daymode {
+  position: relative;
+  background: var(--dark);
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.hero--image {
+  display: block;
+  position:relative;
+  /* border-radius: 50%; */
+}
+
 .hero-subheading--span__daymode::before {
   content: '';
   display: block;
