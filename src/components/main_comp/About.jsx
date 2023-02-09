@@ -67,6 +67,11 @@ function About() {
                   <p className={`fs-4 p-0 m-0 text-center text-lg-start ${isNightMode && 'text-contrastColor'}`}>Participated in Virtual Mobile Development</p>
                   <p className="fs-6 fst-italic text-muted text-center text-lg-start">by Algo Filipino on January 21, 2023</p>
                 </ListGroup.Item>
+
+                <ListGroup.Item className={`${isNightMode && 'bg-dark border'}`}>
+                  <p className={`fs-4 p-0 m-0 text-center text-lg-start ${isNightMode && 'text-contrastColor'}`}>Participated in Scrum 101 - Learn the Basics</p>
+                  <p className="fs-6 fst-italic text-muted text-center text-lg-start">by Styava on February 07, 2023</p>
+                </ListGroup.Item>
               </ListGroup>
             </div>
           </div>
