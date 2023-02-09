@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
+
+import { ThemeContext } from '../../App';
+
 function Certificates() {
+
+  const { isNightMode } = useContext(ThemeContext);
+
   return (
     
     <Container id="scrollspyCertificates" className="my-5 pt-5">
         <div>
-          <h1 className="display-5 text-center fw-bold text-dark">Certificates</h1>
-          <p className='section--heading__divider'>N</p>
-          <hr />
+          <h1 className={`display-5 text-center mt-5 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Certificates</h1>
+          <p className={`section--heading__divider mt-0 text-center ${isNightMode ? "text-contrastColor divider__darkmode" : "text-dark divider__daymode"}`}>N</p>
+          <hr className={`${isNightMode ? "border-darkModeAccentColor" : ""}`}/>
         </div>
 
         <Row className="justify-content-center">
@@ -19,8 +25,8 @@ function Certificates() {
               data-bs-ride="carousel"
             >
               {/* Carousel Indicators */}
-              <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <div className="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" aria-label="Slide 4"></button>
