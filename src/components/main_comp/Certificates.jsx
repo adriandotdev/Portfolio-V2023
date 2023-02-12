@@ -1,23 +1,65 @@
 import React, { useContext } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-
-
 import { ThemeContext } from '../../App';
+import { motion } from 'framer-motion';
 
 function Certificates() {
 
   const { isNightMode } = useContext(ThemeContext);
 
+  const containerAnimation = {
+    initial: {
+      opacity: 0
+    },
+    whileInView: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5
+      }
+    }
+  }
+
+  const titleAnimation = {
+
+    initial: {
+      y: 150, opacity: 0
+    },
+    whileInView: {
+      y: 0, 
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 150,
+        duration: .5,
+      }
+    }  
+  }
+
+  const certificatesAnimation = {
+
+    initial: {
+      scale: 0
+    },
+    whileInView: {
+      scale: 1,
+      transition: {
+        type: "spring",
+        stiffness: 50,
+        duration: .5,
+      }
+    }  
+  }
   return (
     
-    <Container id="scrollspyCertificates" className="my-5 pt-5">
-        <div>
-          <h1 className={`display-5 text-center mt-5 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Certificates</h1>
-          <p className={`section--heading__divider mt-0 text-center ${isNightMode ? "text-contrastColor divider__darkmode" : "text-dark divider__daymode"}`}>N</p>
-          <hr className={`${isNightMode ? "border-darkModeAccentColor" : ""}`}/>
-        </div>
+    <motion.div variants={containerAnimation} initial="initial" whileInView="whileInView" id="scrollspyCertificates" className="container my-5 pt-5">
+        <motion.div variants={containerAnimation}>
+          <motion.h1 variants={titleAnimation} className={`display-5 text-center mt-5 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Certificates</motion.h1>
 
-        <Row className="justify-content-center">
+          <motion.p variants={titleAnimation} className={`section--heading__divider mt-0 text-center ${isNightMode ? "text-contrastColor divider__darkmode" : "text-dark divider__daymode"}`}>N</motion.p>
+          <hr className={`${isNightMode ? "border-darkModeAccentColor" : ""}`}/>
+        </motion.div>
+
+        <motion.div variants={certificatesAnimation} className="row justify-content-center">
           <Col className="col-12 col-lg-6">
             <div
               id="carouselExampleControls"
@@ -81,8 +123,8 @@ function Certificates() {
               </button>
             </div>
           </Col>
-        </Row>
-      </Container>
+        </motion.div>
+      </motion.div>
   )
 }
 

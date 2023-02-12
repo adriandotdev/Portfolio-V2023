@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Container, Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 import ProjectTechnology from '../sub_comp/ProjectTechnology';
 
