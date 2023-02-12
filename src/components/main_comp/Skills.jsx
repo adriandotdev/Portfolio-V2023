@@ -7,55 +7,100 @@ import '../../css/main.css';
 
 import { ThemeContext } from '../../App';
 
+import { motion } from 'framer-motion';
+
 function Skills() {
 
   const { isNightMode } = useContext(ThemeContext);
-  return (
-    <Container id="scrollspySkills" className="my-8 skills">
 
-        <div>
-            <h1 className={`display-5 text-center mt-5 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Skills and Technologies</h1>
-            <p className={`section--heading__divider mt-0 text-center ${isNightMode ? "text-contrastColor divider__darkmode" : "text-dark divider__daymode"}`}>N</p>
+  const containerAnimation = {
+    initial: {
+      opacity: 0
+    },
+    whileInView: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5
+      }
+    }
+  }
+
+  const titleAnimation = {
+
+    initial: {
+      y: 150, opacity: 0
+    },
+    whileInView: {
+      y: 0, 
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 150,
+        duration: .5,
+      }
+    }  
+  }
+
+  const techContainer = {
+    initial: {
+      opacity: 0
+    },
+    whileInView: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  }
+  
+  return (
+    <motion.div variants={containerAnimation} initial="initial" whileInView="whileInView" id="scrollspySkills" className="my-8 skills">
+
+        <motion.div variants={containerAnimation} >
+            <motion.h1 variants={titleAnimation} className={`display-5 text-center mt-5 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Skills and Technologies</motion.h1>
+
+            <motion.p variants={titleAnimation} className={`section--heading__divider mt-0 text-center ${isNightMode ? "text-contrastColor divider__darkmode" : "text-dark divider__daymode"}`}>N</motion.p>
             <hr className={`${isNightMode ? "border-darkModeAccentColor" : ""}`}/>
-        </div>
+        </motion.div>
         
 
-        <Row className="row-cols-1 row-cols-xl-3">
+        <motion.div variants={containerAnimation} className="row row-cols-1 row-cols-xl-3">
             <Col>
-                <div className='d-flex flex-column align-items-center'>
+                <motion.div variants={titleAnimation} className='d-flex flex-column align-items-center'>
                     <img className="img-fluid m-0 p-0" src="/images/Teamwork.png" alt="" />
                     <h2 className={`fs-1 font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Teamwork</h2>
                     <p className={`text-center font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
                       I can work more collaboratively. A group can achieve more than a person trying to work alone. Working together is more efficient than doing tasks seperately.
                     </p>
-                </div>
+                </motion.div>
             </Col>
             <Col>
-                <div className='d-flex flex-column align-items-center'>
+                <motion.div variants={titleAnimation} className='d-flex flex-column align-items-center'>
                     <img className="img-fluid" src="/images/Communication.png" alt="" />
                     <h2 className={`fs-1 font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Communication</h2>
                     <p className={`text-center font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
                       I can fully express my ideas. Communication is not just a one-way process. It is also significant to hear suggestions from others that might help to solve a particular problem.
                     </p>
-                </div>
+                </motion.div>
             </Col>
             <Col>
-                <div className='d-flex flex-column align-items-center'>
+                <motion.div variants={titleAnimation} className='d-flex flex-column align-items-center'>
                     <img className="img-fluid" src="/images/Problem-Solving.png" alt="" />
                     <h2 className={`fs-1 font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Problem-Solving</h2>
                     <p className={`text-center font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
                       I am solution-oriented and can puzzle out the task within a given timeframe and not just accomplishing it but ensuring its reliability and efficiency.
                     </p>
-                </div>
+                </motion.div>
             </Col>
-        </Row>
+        </motion.div>
 
-        <div className="mt-5">
+        <motion.div className="mt-5">
                 {/* <h1 className="display-5 text-center">Technologies</h1> */}
-                <Container
+                <motion.div
+                  variants={techContainer} 
                   className="container d-flex justify-content-center flex-wrap gap-3 mt-4"
                 >
-                  <Row className="row">
+                  <motion.div variants={titleAnimation}  className="row">
                     <Col>
                       <OverlayTrigger
                         placement="bottom"
@@ -71,9 +116,9 @@ function Skills() {
                       </OverlayTrigger>
                       
                     </Col>
-                  </Row>
+                  </motion.div>
 
-                  <Row className="row">
+                  <motion.div variants={titleAnimation}  className="row">
                     <Col>
                       <OverlayTrigger
                         placement="bottom"
@@ -89,9 +134,9 @@ function Skills() {
                       </OverlayTrigger>
                       
                     </Col>
-                  </Row>
+                  </motion.div>
 
-                  <Row className="row">
+                  <motion.div variants={titleAnimation}  className="row">
                     <Col>
                     <OverlayTrigger
                         placement="bottom"
@@ -106,9 +151,9 @@ function Skills() {
                         </span>
                       </OverlayTrigger>
                     </Col>
-                  </Row>
+                  </motion.div>
 
-                  <Row className="row">
+                  <motion.div variants={titleAnimation}  className="row">
                     <Col>
                       <OverlayTrigger
                           placement="bottom"
@@ -124,9 +169,9 @@ function Skills() {
                       </OverlayTrigger>
                       
                     </Col>
-                  </Row>
+                  </motion.div>
 
-                  <Row className="row">
+                  <motion.div variants={titleAnimation}  className="row">
                     <Col>
                       <OverlayTrigger
                           placement="bottom"
@@ -142,9 +187,9 @@ function Skills() {
                       </OverlayTrigger>
                       
                     </Col>
-                  </Row>
+                  </motion.div>
 
-                  <Row className="row">
+                  <motion.div variants={titleAnimation}  className="row">
                     <Col>
                       <OverlayTrigger
                             placement="bottom"
@@ -160,9 +205,9 @@ function Skills() {
                         </OverlayTrigger>
                       
                     </Col>
-                  </Row>
+                  </motion.div>
 
-                  <Row className="row">
+                  <motion.div variants={titleAnimation}  className="row">
                     <Col>
 
                     <OverlayTrigger
@@ -179,9 +224,9 @@ function Skills() {
                         </OverlayTrigger>
                       
                     </Col>
-                  </Row>
+                  </motion.div>
 
-                  <Row className="row">
+                  <motion.div variants={titleAnimation}  className="row">
                     <Col>
                       <OverlayTrigger
                             placement="bottom"
@@ -196,9 +241,9 @@ function Skills() {
                             </span>
                         </OverlayTrigger>
                     </Col>
-                  </Row>
+                  </motion.div>
                   
-                  <Row className="row">
+                  <motion.div variants={titleAnimation}  className="row">
                     <Col>
                       <OverlayTrigger
                             placement="bottom"
@@ -213,9 +258,9 @@ function Skills() {
                             </span>
                         </OverlayTrigger>
                     </Col>
-                  </Row>
+                  </motion.div>
 
-                  <Row className="row">
+                  <motion.div variants={titleAnimation}  className="row">
                     <OverlayTrigger
                             placement="bottom"
                             overlay={ 
@@ -227,9 +272,9 @@ function Skills() {
                                <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="SASS CSS Preprocessor Logo"/>
                             </span>
                         </OverlayTrigger>
-                  </Row>
+                  </motion.div>
 
-                  <Row className="row">
+                  <motion.div variants={titleAnimation}  className="row">
                     <Col>
                     <OverlayTrigger
                             placement="bottom"
@@ -243,9 +288,9 @@ function Skills() {
                             </span>
                         </OverlayTrigger>
                     </Col>
-                  </Row>
+                  </motion.div>
 
-                  <Row className="row">
+                  <motion.div variants={titleAnimation}  className="row">
                     <Col>
                       <OverlayTrigger
                             placement="bottom"
@@ -260,9 +305,9 @@ function Skills() {
                         </OverlayTrigger>
                       
                     </Col>
-                  </Row>
+                  </motion.div>
 
-                  <Row className="row">
+                  <motion.div variants={titleAnimation}  className="row">
                     <Col>
                       <OverlayTrigger
                             placement="bottom"
@@ -277,9 +322,9 @@ function Skills() {
                         </OverlayTrigger>
                       
                     </Col>
-                  </Row>
+                  </motion.div>
 
-                  <Row className="row">
+                  <motion.div variants={titleAnimation}  className="row">
                     <Col>
                      <OverlayTrigger
                             placement="bottom"
@@ -294,9 +339,9 @@ function Skills() {
                         </OverlayTrigger>
                       
                     </Col>
-                  </Row>
+                  </motion.div>
 
-                  <Row className="row">
+                  <motion.div variants={titleAnimation}  className="row">
                     <Col>
                       <OverlayTrigger
                             placement="bottom"
@@ -311,10 +356,10 @@ function Skills() {
                         </OverlayTrigger>
                       
                     </Col>
-                  </Row>
-                </Container>
-              </div>
-    </Container>
+                  </motion.div>
+                </motion.div>
+              </motion.div>
+    </motion.div>
   )
 }
 
