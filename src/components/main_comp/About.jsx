@@ -10,7 +10,7 @@ function About() {
   return (
     <div id="scrollspyAboutMe" className="about container mt-5 pt-5" data-bs-spy="scroll" data-bs-target="portfolio-navbar" data-bs-offset="0">
         <div className='section__title'>
-          <h1  className={`display-5 text-center m-0 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>About</h1>
+          <h1 className={`display-5 text-center m-0 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>About</h1>
           <p className={`section--heading__divider mt-0 text-center ${isNightMode ? "text-contrastColor divider__darkmode" : "text-dark divider__daymode"}`}>N</p>
          <hr className={`${isNightMode ? "border-darkModeAccentColor" : ""}`}/>
         </div>

@@ -9,11 +9,6 @@ import Projects from './Projects';
 import Footer from './Footer';
 
 function Main() {
-
-  useEffect(() => {
-
-    document.title = 'Adrian.dev';
-  }, []);
   
   return (
     <>

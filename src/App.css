@@ -5,11 +5,14 @@
   --whiteAccent: #EDF1EF;
   --secondaryColor: #001D53;
 }
-
+/* 
 * {
   transition: all .5s;
-}
+} */
 
+body {
+  overflow-x: hidden;
+}
 /* ------------------- SWITCH ICON ------------------------- */
 #switch {
   background: var(--dark);
