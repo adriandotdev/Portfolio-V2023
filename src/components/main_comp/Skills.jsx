@@ -54,7 +54,7 @@ function Skills() {
   }
   
   return (
-    <motion.div variants={containerAnimation} initial="initial" whileInView="whileInView" id="scrollspySkills" className="my-8 skills">
+    <motion.div variants={containerAnimation} initial="initial" whileInView="whileInView" id="scrollspySkills" className="container my-8 skills">
 
         <motion.div variants={containerAnimation} >
             <motion.h1 variants={titleAnimation} className={`display-5 text-center mt-5 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Skills and Technologies</motion.h1>

@@ -10,7 +10,7 @@
   transition: all .5s;
 } */
 
-body {
+body, html {
   overflow-x: hidden;
 }
 /* ------------------- SWITCH ICON ------------------------- */

@@ -3,84 +3,182 @@ import {Container, Row, Col} from 'react-bootstrap';
 
 // User Defined Components
 import ProjectTechnology from '../sub_comp/ProjectTechnology';
-
 import '../../css/main.css';
-
 import { ThemeContext } from '../../App';
+import { motion } from 'framer-motion';
 
 function Projects() {
 
   const { isNightMode } = useContext(ThemeContext);
 
-  return (
-    <Container id="scrollspyProjects" className="my-8">
-        <div>
-          <h1 className={`display-5 text-center mt-5 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Projects</h1>
-          <p className={`section--heading__divider mt-0 text-center ${isNightMode ? "text-contrastColor divider__darkmode" : "text-dark divider__daymode"}`}>N</p>
-          <hr className={`${isNightMode ? "border-darkModeAccentColor" : ""}`}/>
-        </div>
+  const containerAnimation = {
+    initial: {
+      opacity: 0
+    },
+    whileInView: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5
+      }
+    }
+  }
 
-        <Container>
+  const fromBottomAnimation = {
+
+    initial: {
+      y: 150, opacity: 0
+    },
+    whileInView: {
+      y: 0, 
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 150,
+        duration: .1,
+      }
+    }  
+  }
+
+  const image = {
+
+    initial: {
+      scale: 0
+    },
+    whileInView: {
+      scale: 1,
+      transition: {
+        type: "spring",
+        stiffness: 50,
+        duration: .5,
+      }
+    }  
+  }
+
+  const fromRightAnimation = {
+    initial: {
+      x: 150, opacity: 0
+    },
+    whileInView: {
+      x: 0, 
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 150,
+        duration: .1,
+      }
+    }
+  }
+
+  const fromLeftAnimation = {
+    initial: {
+      x: -150, opacity: 0
+    },
+    whileInView: {
+      x: 0, 
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 150,
+        duration: .1,
+      }
+    }
+  }
+
+  const techContainer = {
+    initial: {
+      opacity: 0
+    },
+    whileInView: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  }
+
+  const ctaContainer = {
+    initial: {
+      opacity: 0
+    },
+    whileInView: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  }
+  return (
+    <motion.div variants={containerAnimation} initial="initial" whileInView="whileInView" id="scrollspyProjects" className="container my-8">
+        <motion.div variants={containerAnimation}>
+          <motion.h1 variants={fromBottomAnimation} className={`display-5 text-center mt-5 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Projects</motion.h1>
+          <motion.p variants={fromBottomAnimation} className={`section--heading__divider mt-0 text-center ${isNightMode ? "text-contrastColor divider__darkmode" : "text-dark divider__daymode"}`}>N</motion.p>
+          <motion.hr className={`${isNightMode ? "border-darkModeAccentColor" : ""}`}/>
+        </motion.div>
+
+        <motion.div variants={containerAnimation}>
 
           {/* Kayamanan: THPT Project */}
-          <Row className={`p-md-3 mb-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
+          <motion.div variants={containerAnimation} className={`row p-md-3 mb-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
             
             <Col className="col-12 col-lg-6 mb-3 w-100">
               <Row className="row">
                 <Col className="col-12 col-lg-6">
-                  <img
+                  <motion.img variants={image}
                     src="/images/Screenshot (1398).png"
                     alt=""
                     className="img-fluid shadow"
                   />
                 </Col>
                 <Col className="col-12 col-lg-6">
-                  <h1 className={`my-2 text-lg-end font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
+                  <motion.h1 variants={fromRightAnimation} className={`my-2 text-lg-end font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
                     Kayamanan: The Hunt for Philippine Treasures
-                  </h1>
-                  <p className={`text-lg-end font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
+                  </motion.h1>
+                  <motion.p variants={fromRightAnimation} className={`text-lg-end font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
                     The software of our Thesis for the requirement in BS Computer Science degree. A 2D Android role-playing game that teaches Philippine Culture and History. I am the one assigned to implement overall functionalities of the software. During the development, I learned how to use Object-Oriented design such as Observer and Singleton patterns.
-                  </p>
+                  </motion.p>
 
                   <div className="mb-3">
-                    <div className="mx-1 row justify-content-lg-end gap-3">
-                      <div className="col-1 m-0 p-0">
-                        <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C Sharp programming language" />
-                      </div>
+                    <motion.div variants={techContainer} className="mx-1 row justify-content-lg-end gap-3">
 
-                      <div className="col-1 m-0 p-0">
+                      <motion.div variants={fromBottomAnimation}  className="col-1 m-0 p-0">
+                        <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C Sharp programming language" />
+                      </motion.div>
+
+                      <motion.div variants={fromBottomAnimation}  className="col-1 m-0 p-0">
                         <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity Game Engine Logo" />
-                      </div>
-                      <div className="col-1 m-0 p-0">
+                      </motion.div>
+
+                      <motion.div variants={fromBottomAnimation}  className="col-1 m-0 p-0">
                         <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android logo"/>
-                      </div>
-                    </div>
+                      </motion.div>
+
+                    </motion.div>
                   </div>
 
                   {/* Buttons */}
                   <div>
-                    <div className="d-lg-flex justify-content-lg-end gap-2">
+                    <motion.div variants={ctaContainer} className="d-lg-flex justify-content-lg-end gap-2">
 
-                      <a role="button" target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures" 
-                        >View Source Code</a
+                      <motion.a variants={fromBottomAnimation} role="button" target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures" 
+                        >View Source Code</motion.a
                       >
 
-                      <a target="blank" className={`btn ${isNightMode ? "btn-outline-contrastColor" : "btn-outline-bodyTextColor"}`} href="https://drive.google.com/file/d/15zMSkTLew0A-P7mSoBvX03snFDxYhahs/view?usp=share_link" role="button"
-                        >APK File</a
+                      <motion.a variants={fromBottomAnimation} target="blank" className={`btn ${isNightMode ? "btn-outline-contrastColor" : "btn-outline-bodyTextColor"}`} href="https://drive.google.com/file/d/15zMSkTLew0A-P7mSoBvX03snFDxYhahs/view?usp=share_link" role="button"
+                        >APK File</motion.a
                       >
-                    </div>
+                    </motion.div>
                   </div>
                 </Col>
               </Row>
             </Col>
-          </Row>
+          </motion.div>
 
           {/* Food Hub Ordering System Project */}
-          <Row className={`p-md-3 mb-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
+          <motion.div variants={containerAnimation} className={`p-md-3 mb-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
             <Col className="col-12 col-lg-6 ms-auto mb-3 p-3 w-100">
               <Row className="flex-lg-row-reverse">
                 <Col className="col-12 col-lg-6">
-                  <img
+                  <motion.img variants={image}
                     src="/images/Food Hub.png"
                     alt=""
                     className="img-fluid shadow"
@@ -88,96 +186,98 @@ function Projects() {
                 </Col>
 
                 <Col className="col-12 col-lg-6">
-                  <h1 className={`my-2 text-lg-start font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
+                  <motion.h1 variants={fromLeftAnimation} className={`my-2 text-lg-start font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
                     Food Hub Ordering System
-                  </h1>
-                  <p className={`text-lg-start font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
+                  </motion.h1>
+                  <motion.p variants={fromLeftAnimation} className={`text-lg-start font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
                     Our System Analysis and Design, and Software Engineering project. An ordering system for small food businesses. I utilized Responsive Web Design with TailwindCSS, and DaisyUI for pre-made components. React.js also used for component-based UI with Node and Express.js for backend. By doing this project, I learned the State-Management through ContextAPI, and MVC pattern as the SQL as the Model, React.js as View and Express and Node as the Controller.
-                  </p>
-                  <div className="mb-3">
+                  </motion.p>
+                  <motion.div variants={ctaContainer} className="mb-3">
                     <Row className="justify-content-start gap-2 mx-1">
-                      <Col className="col-1 m-0 p-0">
+                      <motion.div variants={fromBottomAnimation} className="col col-1 m-0 p-0">
                         <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react.js logo"/>
-                      </Col>
+                      </motion.div>
 
-                      <Col className="col-1 m-0 p-0">
+                      <motion.div variants={fromBottomAnimation}  className="col col-1 m-0 p-0">
                          <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL logo"/>
-                      </Col>
+                      </motion.div>
 
-                      <Col className="col-1 m-0 p-0">
+                      <motion.div variants={fromBottomAnimation}  className="col col-1 m-0 p-0">
                         <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js logo"/>
-                      </Col>
+                      </motion.div>
 
-                      <Col className="col-1 m-0 p-0">
+                      <motion.div variants={fromBottomAnimation}  className="col col-1 m-0 p-0">
                         <ProjectTechnology src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' alt="Node.js Logo"/>
-                      </Col>
+                      </motion.div>
 
-                      <Col className="col-1 m-0 p-0">
+                      <motion.div variants={fromBottomAnimation}  className="col col-1 m-0 p-0">
 
                         <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS CSS Framework Logo"/>
-                      </Col>
+                      </motion.div>
                     </Row>
-                  </div>
-                  <div>
+                  </motion.div>
+                  <motion.div variants={fromBottomAnimation}>
                     <a target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Food-Hub-Software-Engineering-" role="button"
                       >View Source Code</a
                     >
-                  </div>
+                  </motion.div>
                 </Col>
               </Row>
             </Col>
-          </Row>
+          </motion.div>
           
           {/* Flashcard Project */}
-          <Row className={`p-md-3 mt-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
+          <motion.div variants={containerAnimation} className={`row p-md-3 mt-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
             
             <Col className="col-12 col-lg-6 mb-3 w-100">
               <Row className="row">
                 <Col className="col-12 col-lg-6">
-                  <img
+                  <motion.img
+                    variants={image}
                     src="/images/Flashcard.png"
                     alt=""
                     className="img-fluid shadow"
                   />
                 </Col>
                 <Col className="col-12 col-lg-6">
-                  <h1 className={`my-2 text-lg-end font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
+                  <motion.h1 variants={fromRightAnimation} className={`my-2 text-lg-end font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
                     Flashcards
-                  </h1>
-                  <p className={`text-lg-end font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
+                  </motion.h1>
+                  <motion.p variants={fromRightAnimation} className={`text-lg-end font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
                     A simple C.R.U.D app that enables the user to create set of questions based on their chosen category. Here, I learned how to use "useReducer" hook to handle complex states.
-                  </p>
+                  </motion.p>
 
                   <div className="mb-3">
-                    <div className="mx-1 row justify-content-lg-end gap-3">
-                      <div className="col-1 m-0 p-0">
+                    <motion.div variants={techContainer} className="mx-1 row justify-content-lg-end gap-3">
+                      <motion.div variants={fromBottomAnimation} className="col-1 m-0 p-0">
                         <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" />
-                      </div>
+                      </motion.div>
 
-                      <div className="col-1 m-0 p-0">
+                      <motion.div variants={fromBottomAnimation} className="col-1 m-0 p-0">
                         <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS" />
-                      </div>
-                    </div>
+                      </motion.div>
+                    </motion.div>
                   </div>
 
                   {/* Buttons */}
                   <div>
-                    <div className="d-lg-flex justify-content-lg-end gap-2">
-                      <a role="button" target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Flashcard" 
-                        >View Source Code</a
+                    <motion.div variants={ctaContainer} className="d-lg-flex justify-content-lg-end gap-2">
+                      
+                      <motion.a variants={fromBottomAnimation} role="button" target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Flashcard" 
+                        >View Source Code</motion.a
                       >
 
-                      <a target="blank" className={`btn ${isNightMode ? "btn-outline-contrastColor" : "btn-outline-bodyTextColor"}`} href="https://flashcards-go.netlify.app/" role="button"
-                        >Live Site</a
+                      <motion.a variants={fromBottomAnimation} target="blank" className={`btn ${isNightMode ? "btn-outline-contrastColor" : "btn-outline-bodyTextColor"}`} href="https://flashcards-go.netlify.app/" role="button"
+                        >Live Site</motion.a
                       >
-                    </div>
+                    </motion.div>
                   </div>
                 </Col>
               </Row>
             </Col>
-          </Row>
-        </Container>
-      </Container>
+          </motion.div>
+        </motion.div>
+      </motion.div>
   )
 }
 
