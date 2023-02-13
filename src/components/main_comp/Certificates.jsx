@@ -72,6 +72,9 @@ function Certificates() {
                   <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="6" aria-label="Slide 7"></button>
               </div>
 
               {/* Carousel Inner Content */}
@@ -95,6 +98,15 @@ function Certificates() {
                 </div>
                 <div className="carousel-item">
                     <img src="/images/Frontend Certificate - HTML.png" className="d-block w-100" alt="..." />
+                </div>
+                <div className="carousel-item">
+                    <img src="/images/Algo Filipino Mobile Dev Workshop.png" className="d-block w-100" alt="..." />
+                </div>
+                <div className="carousel-item">
+                    <img src="/images/Zuit Coding Free Bootcamp.png" className="d-block w-100" alt="..." />
+                </div>
+                <div className="carousel-item">
+                    <img src="/images/Scrum 101 - Learn the Basics.png" className="d-block w-100" alt="..." />
                 </div>
               </div>
               <button
