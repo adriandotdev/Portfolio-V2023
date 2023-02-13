@@ -31,19 +31,19 @@ function Navbar() {
   // A useEffect that runs whenever the 'isNightMode' state changes.
   useEffect(() => {
 
-    if (isNightMode) {
+    if (!isNightMode) {
 
       themeToggleCircle.current.classList.remove('switch--circle__left');
       themeToggleCircle.current.classList.add('switch--circle__right');
 
-      document.body.style.backgroundColor = '#000B20';
+      document.body.style.backgroundColor = 'white';
     }
     else {
 
       themeToggleCircle.current.classList.add('switch--circle__left');
       themeToggleCircle.current.classList.remove('switch--circle__right');
 
-      document.body.style.backgroundColor = 'white';
+      document.body.style.backgroundColor = '#000B20';
     }
   }, [isNightMode])
 
