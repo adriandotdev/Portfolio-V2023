@@ -124,7 +124,7 @@ function Projects() {
             <Row className="row">
               <Col className="col-12 col-lg-6">
                 <motion.img variants={image}
-                  src="/images/Screenshot (1398).png"
+                  src="/images/projects/Kayamanan.png"
                   alt=""
                   className="img-fluid shadow"
                 />
@@ -179,7 +179,7 @@ function Projects() {
             <Row className="flex-lg-row-reverse">
               <Col className="col-12 col-lg-6">
                 <motion.img variants={image}
-                  src="/images/Food Hub.png"
+                  src="/images/projects/Food Hub.png"
                   alt=""
                   className="img-fluid shadow"
                 />
@@ -234,7 +234,7 @@ function Projects() {
               <Col className="col-12 col-lg-6">
                 <motion.img
                   variants={image}
-                  src="/images/Flashcard.png"
+                  src="/images/projects/Flashcard.png"
                   alt=""
                   className="img-fluid shadow"
                 />
