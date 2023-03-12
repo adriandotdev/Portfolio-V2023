@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 // User Defined Components
 import ProjectTechnology from '../sub_comp/ProjectTechnology';
