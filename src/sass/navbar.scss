@@ -1,0 +1,26 @@
+.portfolio-navbar {
+
+    .focusable:focus-visible {
+        outline: 2px solid #f1ece6;
+    }
+
+    .navbar-link {
+        position: relative;
+        width: max-content;
+    }
+
+    .navbar-link::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 0;
+        background-color: #f1ece6;
+        transition: width 600ms ease-in;
+    }
+
+    .navbar-link:hover::after {
+        width: 100%;
+        transition: width 300ms ease-out;
+    }
+}

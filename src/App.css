@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Calistoga&family=Montserrat:wght@400;500&family=Secular+One&display=swap');
+
+:root {
+  --dark: #000B20;
+  --accentDarkColor: #d3bda3;
+  --whiteAccent: #EDF1EF;
+  --secondaryColor: #001D53;
+}
+
+/* 
+* {
+  transition: all .5s;
+} */
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+/* ------------------- SWITCH ICON ------------------------- */
+#switch {
+  background: var(--dark);
+  max-width: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-right: auto;
+  height: 1.9rem;
+  align-self: center;
+  border-radius: 1.5rem;
+  position: relative;
+  border: 1px solid white;
+  margin-top: .5rem;
+}
+
+.switch--circle {
+  display: block;
+  height: inherit;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: .6rem;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 200ms;
+}
+
+.switch--circle__left {
+  /* right: -2px; */
+  transform: translate(5%, 6%);
+}
+
+.switch--circle__right {
+  transform: translate(105%, 6%);
+}
+
+#switch__dark-icon {
+  display: block;
+  width: 1rem;
+  position: absolute;
+  transform: translate(15%, 0%);
+}
+
+#switch__day-icon {
+  display: block;
+  width: 1rem;
+  position: absolute;
+  right: 5%;
+  transform: translate(-5%, 0%);
+}
+
+/* ------------------------------------- END OF SWITCH ICON ------------------------------------------- */
+
+/* ------------------ FONT FAMILY MONTSERRAT ------------------------ */
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-montserrat-medium {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* ---------------------- END OF FONT MONTSERRAT -------------------- */
+
+/* ----------------------------- SECTION HEADING DIVIDER ---------------------
+  __________N______________
+*/
+.section--heading__divider {
+  position: relative;
+  width: min-content;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.section--heading__divider::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 100%;
+}
+
+.section--heading__divider::before {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 2px;
+
+  position: absolute;
+  top: 50%;
+  right: 100%;
+}
+
+.divider__darkmode::before,
+.divider__darkmode::after {
+  background: var(--whiteAccent);
+}
+
+.divider__daymode::before,
+.divider__daymode::after {
+  background: black;
+}
+
+.hero-subheading--span__daymode {
+
+  position: relative;
+  white-space: nowrap;
+  color: white;
+  font-style: italic;
+  padding-right: .5rem;
+}
+
+/* --------------------------- END OF HEADING DIVIDER ------------------------ */
+
+/* --------------------------- HERO SECTION ------------------------------ */
+.hero-page {
+  padding: 6rem 0;
+  padding-bottom: 0;
+}
+
+.image-background__darkmode {
+  position: relative;
+  background: var(--accentDarkColor);
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.image-background__daymode {
+  position: relative;
+  background: var(--dark);
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.hero--image {
+  display: block;
+  position: relative;
+  /* border-radius: 50%; */
+}
+
+.hero-subheading--span__daymode::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--dark);
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  transform: skewX(-20deg);
+  z-index: -1;
+}
+
+.hero-subheading--span__nightmode {
+
+  position: relative;
+  white-space: nowrap;
+  color: var(--dark);
+  font-style: italic;
+  padding-right: .5rem;
+}
+
+.hero-subheading--span__nightmode::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--accentDarkColor);
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  transform: skewX(-20deg);
+  z-index: -1;
+}
+
+
+#btn--resume {
+  transition: all 200ms;
+}
+
+/* .btn--resume__darkmode:hover {
+  transform: translateY(-5px);
+  outline: 2px solid var(--dark);
+  box-shadow: 5px 5px 0px var(--accentDarkColor);
+}
+
+.btn--resume__daymode:hover {
+  transform: translateY(-5px);
+  outline: 1px solid var(--whiteAccent);
+  box-shadow: 5px 5px 0px var(--dark);
+} */
+
+
+/* ---------------------------- END OF HERO SECTION ---------------------- */
+
+#about--paragraph {
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+.project-icon {
+  transition: all 200ms;
+}
+
+.project-icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-icon {
+  fill: white;
+}
+
+.portfolio-logo {
+  display: block;
+  max-width: 12rem
+}
+
+.nav-shadow__darkmode {
+  box-shadow: 0px 0px 1px var(--whiteAccent);
+}
+
+nav::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: blur(1px);
+  z-index: -1;
+}
+
+#nav-icon {
+  max-width: 5.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+
+  #switch {
+    margin-top: 0;
+  }
+
+  .hero-page {
+    padding: 0;
+    min-height: 100vh;
+    height: 100%;
+  }
+
+  .hero-page--body__darkmode::before {
+    content: "";
+    display: block;
+    inset: 0;
+    background: linear-gradient(to top, var(--dark), var(--secondaryColor));
+    position: absolute;
+    z-index: -2;
+  }
+
+  .hero-content {
+    min-height: 100vh;
+  }
+
+  #hero-page__subheading {
+    max-width: 40rem;
+  }
+
+  .about {
+    min-height: 80vh;
+  }
+
+  .skills {
+    min-height: 90vh;
+  }
+}

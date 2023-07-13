@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Calistoga&family=Secular+One&display=swap');
+
+$display-font-family: 'Aboreto', cursive;
+$btn-hover-bg-shade-amount: 40%;
+$btn-hover-bg-tint-amount: 45%;
+$dark: #000B20;
+
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+
+$custom-theme-colors: (
+    "darkSecondary": #001D53,
+    "bodyTextColor": #090300,
+    "contrastColor": #EDF1EF,
+    "darkModeAccentColor": #e6d8c7,
+    "mostDark": #000A1C
+);
+
+$custom-spacers: (
+    6: $spacer * 3.5,
+    7: $spacer * 4,
+    8: $spacer * 6.5
+);
+
+$theme-colors: map_merge($custom-theme-colors, $theme-colors);
+$spacers: map_merge($custom-spacers, $spacers);
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss'
