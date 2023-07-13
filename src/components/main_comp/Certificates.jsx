@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Col } from 'react-bootstrap';
 import { ThemeContext } from '../../App';
 import { motion } from 'framer-motion';
@@ -84,11 +84,19 @@ function Certificates() {
               <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="4" aria-label="Slide 5"></button>
               <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="5" aria-label="Slide 6"></button>
               <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="7" aria-label="Slide 8"></button>
             </div>
 
             {/* Carousel Inner Content */}
             <div className="carousel-inner">
               <div className="carousel-item active">
+                <img
+                  src="/images/certificates/Certificate_of_Achievement.png"
+                  className="d-block w-100"
+                  alt="Certificate of Achievement for Outstanding Front-End Developer Intern"
+                />
+              </div>
+              <div className="carousel-item">
                 <img
                   src="/images/certificates/Backend_Development_and_APIs.png"
                   className="d-block w-100"
