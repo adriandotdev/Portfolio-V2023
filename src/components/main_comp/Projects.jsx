@@ -1,4 +1,5 @@
-import React, { useContext } from 'react'
+/* eslint-disable react/no-unescaped-entities */
+import { useContext } from 'react'
 import { Row, Col } from 'react-bootstrap';
 
 // User Defined Components
@@ -143,12 +144,19 @@ function Projects() {
 
           <Col className="col-12 col-lg-6 mb-3 w-100">
             <Row className="row">
-              <Col className="col-12 col-lg-6">
-                <motion.img variants={image} viewport="viewport"
-                  src="/images/projects/Kayamanan.png"
-                  alt=""
-                  className="img-fluid shadow"
-                />
+              <Col className="col-12 col-lg-6 img--project-container">
+                <div className="img-fluid">
+                  <motion.img variants={image} viewport="viewport"
+                    src="/images/projects/Kayamanan.png"
+                    alt=""
+                    className="img-fluid shadow"
+                  />
+                  <motion.img variants={image} viewport="viewport"
+                    src="/images/gifs/Quest 1.gif"
+                    alt=""
+                    style={{ width: '100%' }}
+                  />
+                </div>
               </Col>
               <Col className="col-12 col-lg-6">
                 <motion.h1 variants={fromRightAnimation} viewport="viewport" className={`my-2 text-lg-end font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
@@ -180,7 +188,7 @@ function Projects() {
                 <div>
                   <motion.div variants={ctaContainer} viewport="viewport" className="d-lg-flex justify-content-lg-end gap-2">
 
-                    <motion.a variants={fromBottomAnimation} viewport="viewport" role="button" target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures"
+                    <motion.a variants={fromBottomAnimation} viewport="viewport" role="button" target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-"
                     >View Source Code</motion.a
                     >
 
@@ -198,12 +206,19 @@ function Projects() {
         <motion.div variants={containerAnimation} viewport="viewport" className={`p-md-3 mb-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
           <Col className="col-12 col-lg-6 ms-auto mb-3 p-3 w-100">
             <Row className="flex-lg-row-reverse">
-              <Col className="col-12 col-lg-6">
-                <motion.img variants={image}
-                  src="/images/projects/Food Hub.png"
-                  alt=""
-                  className="img-fluid shadow"
-                />
+              <Col className="col-12 col-lg-6 img--project-container">
+                <div className="img-fluid">
+                  <motion.img variants={image}
+                    src="/images/projects/Food Hub.png"
+                    alt=""
+                    className="img-fluid shadow"
+                  />
+                  <motion.img variants={image}
+                    src="/images/gifs/Cart.gif"
+                    alt=""
+                    style={{ width: '100%' }}
+                  />
+                </div>
               </Col>
 
               <Col className="col-12 col-lg-6">
@@ -252,14 +267,24 @@ function Projects() {
 
           <Col className="col-12 col-lg-6 mb-3 w-100">
             <Row className="row">
-              <Col className="col-12 col-lg-6">
-                <motion.img
-                  variants={image}
-                  viewport="viewport"
-                  src="/images/projects/Flashcard.png"
-                  alt=""
-                  className="img-fluid shadow"
-                />
+              <Col className="col-12 col-lg-6 img--project-container">
+                <div className="img-fluid">
+                  <motion.img
+                    variants={image}
+                    viewport="viewport"
+                    src="/images/projects/Flashcard.png"
+                    alt=""
+                    className="img-fluid shadow"
+                  />
+
+                  <motion.img
+                    variants={image}
+                    viewport="viewport"
+                    src="/images/gifs/flashcard.gif"
+                    alt=""
+                    style={{ width: '100%' }}
+                  />
+                </div>
               </Col>
               <Col className="col-12 col-lg-6">
                 <motion.h1 variants={fromRightAnimation} viewport="viewport" className={`my-2 text-lg-end font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
@@ -267,6 +292,130 @@ function Projects() {
                 </motion.h1>
                 <motion.p variants={fromRightAnimation} viewport="viewport" className={`text-lg-end font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
                   This is a simple C.R.U.D app that allows the user to create a set of questions based on their chosen category. Through this project, I learned how to use the 'useReducer' hook to handle complex states.
+                </motion.p>
+
+                <div className="mb-3">
+                  <motion.div variants={techContainer} viewport="viewport" className="mx-1 row justify-content-lg-end gap-3">
+                    <motion.div variants={fromBottomAnimation} viewport="viewport" className="col-1 m-0 p-0">
+                      <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" />
+                    </motion.div>
+
+                    <motion.div variants={fromBottomAnimation} viewport="viewport" className="col-1 m-0 p-0">
+                      <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS" />
+                    </motion.div>
+                  </motion.div>
+                </div>
+
+                {/* Buttons */}
+                <div>
+                  <motion.div variants={ctaContainer} viewport="viewport" className="d-lg-flex justify-content-lg-end gap-2">
+
+                    <motion.a variants={fromBottomAnimation} viewport="viewport" role="button" target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Flashcard"
+                    >View Source Code</motion.a
+                    >
+
+                    <motion.a variants={fromBottomAnimation} viewport="viewport" target="blank" className={`btn ${isNightMode ? "btn-outline-contrastColor" : "btn-outline-bodyTextColor"}`} href="https://flashcards-go.netlify.app/" role="button"
+                    >Live Site</motion.a
+                    >
+                  </motion.div>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </motion.div>
+
+        {/* Recipe Search App */}
+        <motion.div variants={containerAnimation} viewport="viewport" className={`row p-md-3 mt-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
+
+          <Col className="col-12 col-lg-6 mb-3 w-100">
+            <Row className="flex-lg-row-reverse">
+              <Col className="col-12 col-lg-6 img--project-container">
+                <div className="img-fluid">
+                  <motion.img
+                    variants={image}
+                    viewport="viewport"
+                    src="/images/projects/Recipe_Search_App.png"
+                    alt=""
+                    className="img-fluid shadow"
+                  />
+
+                  <motion.img
+                    variants={image}
+                    viewport="viewport"
+                    src="/images/gifs/recipe.gif"
+                    alt=""
+                    style={{ width: '100%' }}
+                  />
+                </div>
+              </Col>
+              <Col className="col-12 col-lg-6">
+                <motion.h1 variants={fromRightAnimation} viewport="viewport" className={`my-2 text-lg-start font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
+                  Recipe Search App using API
+                </motion.h1>
+                <motion.p variants={fromRightAnimation} viewport="viewport" className={`text-lg-start font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
+                  A recipe app that allows user to search for their desire food, and get its recipes. Utilized Edamam API to get the list of recipes.
+                </motion.p>
+
+                <div className="mb-3">
+                  <motion.div variants={techContainer} viewport="viewport" className="mx-1 row justify-content-lg-start gap-3">
+                    <motion.div variants={fromBottomAnimation} viewport="viewport" className="col-1 m-0 p-0">
+                      <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" />
+                    </motion.div>
+
+                    <motion.div variants={fromBottomAnimation} viewport="viewport" className="col-1 m-0 p-0">
+                      <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS" />
+                    </motion.div>
+                  </motion.div>
+                </div>
+
+                {/* Buttons */}
+                <div>
+                  <motion.div variants={ctaContainer} viewport="viewport" className="d-lg-flex justify-content-lg-start gap-2">
+
+                    <motion.a variants={fromBottomAnimation} viewport="viewport" role="button" target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Flashcard"
+                    >View Source Code</motion.a
+                    >
+
+                    <motion.a variants={fromBottomAnimation} viewport="viewport" target="blank" className={`btn ${isNightMode ? "btn-outline-contrastColor" : "btn-outline-bodyTextColor"}`} href="https://flashcards-go.netlify.app/" role="button"
+                    >Live Site</motion.a
+                    >
+                  </motion.div>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </motion.div>
+
+        {/* YGO Programming Center */}
+        <motion.div variants={containerAnimation} viewport="viewport" className={`row p-md-3 mt-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
+
+          <Col className="col-12 col-lg-6 mb-3 w-100">
+            <Row className="row">
+              <Col className="col-12 col-lg-6 img--project-container">
+                <div className="img-fluid">
+                  <motion.img
+                    variants={image}
+                    viewport="viewport"
+                    src="/images/projects/YGO.png"
+                    alt=""
+                    className="img-fluid shadow"
+                  />
+
+                  <motion.img
+                    variants={image}
+                    viewport="viewport"
+                    src="/images/gifs/Enrolling Courses.gif"
+                    alt=""
+                    style={{ width: '100%' }}
+                  />
+                </div>
+              </Col>
+              <Col className="col-12 col-lg-6">
+                <motion.h1 variants={fromRightAnimation} viewport="viewport" className={`my-2 text-lg-end font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
+                  YGO Programming Center
+                </motion.h1>
+                <motion.p variants={fromRightAnimation} viewport="viewport" className={`text-lg-end font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
+                  A recipe app that allows user to search for their desire food, and get its recipes. Utilized Edamam API to get the list of recipes.
                 </motion.p>
 
                 <div className="mb-3">

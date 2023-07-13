@@ -261,6 +261,32 @@ nav::before {
   max-width: 5.5rem;
 }
 
+/* Projects */
+.img--project-container div {
+  position: relative;
+}
+
+.img--project-container div img:nth-child(2) {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 300ms;
+}
+
+.img--project-container:hover div img:nth-child(1) {
+
+  opacity: 0;
+  transition: all 300ms;
+}
+
+.img--project-container:hover div img:nth-child(2) {
+
+  opacity: 1;
+}
+
 @media screen and (min-width: 1200px) {
 
   #switch {
