@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 import ProjectTechnology from '../sub_comp/ProjectTechnology';
@@ -56,7 +56,7 @@ function Skills() {
     whileInView: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
+        staggerChildren: 0.05
       }
     },
     viewport: {

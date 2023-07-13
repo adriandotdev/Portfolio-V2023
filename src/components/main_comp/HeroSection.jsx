@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+/* eslint-disable react/no-unescaped-entities */
+import { useContext } from 'react';
 import { ThemeContext } from '../../App';
 import { motion } from 'framer-motion';
 
@@ -131,7 +132,7 @@ function HeroSection() {
               whileHover="whileHover"
               viewport="viewport"
               target="blank"
-              className={`btn btn-lg ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://drive.google.com/file/d/1_2CeXqbd3EFmNug7YuEMbJxlLU9BSI_f/view?usp=sharing" role="button"
+              className={`btn btn-lg ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://drive.google.com/file/d/1V1IPSQTxxuNC5NfrND3Y2D-SJswBaqv5/view?usp=sharing" role="button"
             >
               View My Resume
             </motion.a>
