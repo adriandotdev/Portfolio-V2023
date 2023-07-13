@@ -132,7 +132,7 @@ function HeroSection() {
               whileHover="whileHover"
               viewport="viewport"
               target="blank"
-              className={`btn btn-lg ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://drive.google.com/file/d/1V1IPSQTxxuNC5NfrND3Y2D-SJswBaqv5/view?usp=sharing" role="button"
+              className={`btn btn-lg ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://drive.google.com/file/d/1vZ1btpAr7q_9ynZToXgYDLe4BSPrBa8E/view?usp=sharing" role="button"
             >
               View My Resume
             </motion.a>
