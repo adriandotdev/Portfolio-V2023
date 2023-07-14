@@ -6,7 +6,7 @@ function Footer() {
       className="container-fluid bg-dark pt-5 pb-3 d-flex flex-column justify-content-center align-items-center gap-3"
     >
       <div className="container">
-        <img className='portfolio-logo mx-auto w-100' src="/images/Logo.png" alt="Adrian Marcelo portfolio logo" />
+        <img className='portfolio-logo mx-auto w-100' src="/images/Logo.png" alt="Adrian Marcelo portfolio logo" loading='lazy' />
         <p className="text-white text-center fw-bold fs-3">
           Follow Me and Let's Connect!
         </p>
@@ -55,7 +55,7 @@ function Footer() {
 
       <div>
         <p className="text-white text-center fw-bold fs-4 p-0 m-0">Adrian.dev</p>
-        <p className="text-white text-center fw-bolder">Copyright &copy; 2023</p>
+        <p className="text-white text-center fw-bolder">Developed by Adrian Nads Marcelo</p>
       </div>
     </footer>
   )

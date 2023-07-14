@@ -148,13 +148,15 @@ function Projects() {
                 <div className="img-fluid">
                   <motion.img variants={image} viewport="viewport"
                     src="/images/projects/Kayamanan.png"
-                    alt=""
+                    alt="Kayamanan: The Hunt for Philippine Treasures main menu interface"
                     className="img-fluid shadow"
+                    loading='lazy'
                   />
                   <motion.img variants={image} viewport="viewport"
                     src="/images/gifs/Quest 1.gif"
-                    alt=""
+                    alt="Kayamanan: The Hunt for Philippine Treasures sample output"
                     style={{ width: '100%' }}
+                    loading='lazy'
                   />
                 </div>
               </Col>
@@ -210,13 +212,15 @@ function Projects() {
                 <div className="img-fluid">
                   <motion.img variants={image}
                     src="/images/projects/Food Hub.png"
-                    alt=""
+                    alt="Food Hub Ordering System sample user interface"
                     className="img-fluid shadow"
+                    loading='lazy'
                   />
                   <motion.img variants={image}
                     src="/images/gifs/Cart.gif"
-                    alt=""
+                    alt="Food Hub Ordering System sample output"
                     style={{ width: '100%' }}
+                    loading='lazy'
                   />
                 </div>
               </Col>
@@ -273,16 +277,18 @@ function Projects() {
                     variants={image}
                     viewport="viewport"
                     src="/images/projects/Flashcard.png"
-                    alt=""
+                    alt="Flashcard sample user interface"
                     className="img-fluid shadow"
+                    loading='lazy'
                   />
 
                   <motion.img
                     variants={image}
                     viewport="viewport"
                     src="/images/gifs/flashcard.gif"
-                    alt=""
+                    alt="Flashcard sample ouput."
                     style={{ width: '100%' }}
+                    loading='lazy'
                   />
                 </div>
               </Col>
@@ -335,16 +341,18 @@ function Projects() {
                     variants={image}
                     viewport="viewport"
                     src="/images/projects/Recipe_Search_App.png"
-                    alt=""
+                    alt="Recipe Search App sample user interface"
                     className="img-fluid shadow"
+                    loading='lazy'
                   />
 
                   <motion.img
                     variants={image}
                     viewport="viewport"
                     src="/images/gifs/recipe.gif"
-                    alt=""
+                    alt="Recipe Search App sample output"
                     style={{ width: '100%' }}
+                    loading='lazy'
                   />
                 </div>
               </Col>
@@ -397,16 +405,18 @@ function Projects() {
                     variants={image}
                     viewport="viewport"
                     src="/images/projects/YGO.png"
-                    alt=""
+                    alt="YGO Programming Center sample user interface"
                     className="img-fluid shadow"
+                    loading='lazy'
                   />
 
                   <motion.img
                     variants={image}
                     viewport="viewport"
                     src="/images/gifs/Enrolling Courses.gif"
-                    alt=""
+                    alt="YGO Programming Center sample output"
                     style={{ width: '100%' }}
+                    loading='lazy'
                   />
                 </div>
               </Col>

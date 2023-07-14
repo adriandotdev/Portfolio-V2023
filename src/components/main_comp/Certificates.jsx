@@ -94,6 +94,7 @@ function Certificates() {
                   src="/images/certificates/Certificate_of_Achievement.png"
                   className="d-block w-100"
                   alt="Certificate of Achievement for Outstanding Front-End Developer Intern"
+                  loading='lazy'
                 />
               </div>
               <div className="carousel-item">
@@ -101,35 +102,52 @@ function Certificates() {
                   src="/images/certificates/Backend_Development_and_APIs.png"
                   className="d-block w-100"
                   alt="Freecodecamp certificate for Back End Development and APIs"
+                  loading='lazy'
                 />
               </div>
               <div className="carousel-item">
                 <img
                   src="/images/certificates/Frontend_Development_Libraries.png"
                   className="d-block w-100"
-                  alt="Freecodecamp certificate for Javascript Data Structures and Algorithms"
+                  alt="Freecodecamp certificate for Front End Development Libraries"
+                  loading='lazy'
                 />
               </div>
               <div className="carousel-item">
                 <img
                   src="/images/certificates/JavaScript_Algorithms_and_Data_Structures.png"
                   className="d-block w-100"
-                  alt="Freecodecamp certificate for Responsive Web Design"
+                  alt="Freecodecamp certificate for JavaScript Algorithms and Data Structures"
+                  loading='lazy'
                 />
               </div>
               <div className="carousel-item">
                 <img
                   src="/images/certificates/Responsive_Web_Design.png"
-                  className="d-block w-100" alt="..." />
+                  className="d-block w-100"
+                  alt="Freecodecamp certificate for Responsive Web Design"
+                  loading='lazy' />
               </div>
               <div className="carousel-item">
-                <img src="/images/certificates/Algo Filipino Mobile Dev Workshop.png" className="d-block w-100" alt="..." />
+                <img
+                  src="/images/certificates/Algo Filipino Mobile Dev Workshop.png"
+                  className="d-block w-100"
+                  alt="Certificate for Algo Filipino Mobile Development Workshop"
+                  loading="lazy" />
               </div>
               <div className="carousel-item">
-                <img src="/images/certificates/Zuit Coding Free Bootcamp.png" className="d-block w-100" alt="..." />
+                <img
+                  src="/images/certificates/Zuit Coding Free Bootcamp.png"
+                  className="d-block w-100"
+                  alt="Certificate for Zuitt Coding Free Bootcamp"
+                  loading='lazy' />
               </div>
               <div className="carousel-item">
-                <img src="/images/certificates/Scrum 101 - Learn the Basics.png" className="d-block w-100" alt="..." />
+                <img
+                  src="/images/certificates/Scrum 101 - Learn the Basics.png"
+                  className="d-block w-100"
+                  alt="Certificate for Scrum 101 - Learn the Basics"
+                  loading="lazy" />
               </div>
             </div>
             <button

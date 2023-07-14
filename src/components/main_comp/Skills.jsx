@@ -78,7 +78,7 @@ function Skills() {
       <motion.div variants={containerAnimation} viewport="viewport" className="row row-cols-1 row-cols-xl-3">
         <Col>
           <motion.div variants={titleAnimation} viewport="viewport" className='d-flex flex-column align-items-center'>
-            <img className="img-fluid m-0 p-0" src="/images/Teamwork.png" alt="" />
+            <img className="img-fluid m-0 p-0" src="/images/Teamwork.png" alt="A graphic for teamwork" loading='lazy' />
             <h2 className={`fs-1 font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Teamwork</h2>
             <p className={`text-center font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
               I can work more collaboratively. A group can achieve more than an individual working alone. Working together is more efficient than doing tasks separately.
@@ -87,7 +87,7 @@ function Skills() {
         </Col>
         <Col>
           <motion.div variants={titleAnimation} viewport="viewport" className='d-flex flex-column align-items-center'>
-            <img className="img-fluid" src="/images/Communication.png" alt="" />
+            <img className="img-fluid" src="/images/Communication.png" alt="A graphic for communication" loading='lazy' />
             <h2 className={`fs-1 font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Communication</h2>
             <p className={`text-center font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
               I can fully express my ideas. Communication is not just a one-way process. It is also significant to hear suggestions from others that might help solve a particular problem.
@@ -96,7 +96,7 @@ function Skills() {
         </Col>
         <Col>
           <motion.div variants={titleAnimation} viewport="viewport" className='d-flex flex-column align-items-center'>
-            <img className="img-fluid" src="/images/Problem-Solving.png" alt="" />
+            <img className="img-fluid" src="/images/Problem-Solving.png" alt="A graphic for problem-solving" loading='lazy' />
             <h2 className={`fs-1 font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Problem-Solving</h2>
             <p className={`text-center font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
               I am solution-oriented and can figure out a task within a given timeframe, not just accomplish it, but also ensure its reliability and efficiency.
