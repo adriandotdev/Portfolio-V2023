@@ -6,7 +6,7 @@ import '../../css/navbar.min.css';
 
 function Navbar() {
 
-  const { isNightMode, setNightMode } = useContext(ThemeContext);
+  const { isNightMode, setNightMode, setMobileMenuOpen } = useContext(ThemeContext);
   const [isWindowScrolled, setWindowToScrolled] = useState(false);
   const themeToggleCircle = useRef(null);
   const navRef = useRef(null);
@@ -50,7 +50,7 @@ function Navbar() {
 
   return (
     <nav ref={navRef} id="portfolio-navbar" className={`portfolio-navbar navbar px-3 navbar-expand-lg fixed-top navbar-dark bg-dark 
-    ${isWindowScrolled && isNightMode && "nav-shadow__darkmode"}`} >
+    ${isWindowScrolled && isNightMode && ""}`} >
       <div className="container">
         <div className="row w-100 justify-content-between justify-content-sm-between align-items-center">
           <div className="col-6">
@@ -58,7 +58,13 @@ function Navbar() {
               <img id="nav-icon" src="/images/Logo.png" alt="Nads' portfolio logo" />
             </a>
           </div>
-          <div className="col-2 ms-md-auto">
+
+          <div tabIndex="0" role="button" className="col-2 d-lg-none hamburger p-0" onClick={() => setMobileMenuOpen(true)}>
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+          </div>
+          {/* <div className="col-2 ms-md-auto">
             <button
               className="navbar-toggler"
               type="button"
@@ -70,7 +76,7 @@ function Navbar() {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-          </div>
+          </div> */}
         </div>
 
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">

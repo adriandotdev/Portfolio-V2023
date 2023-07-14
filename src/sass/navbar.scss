@@ -1,5 +1,7 @@
 .portfolio-navbar {
 
+    z-index: 1 !important;
+
     .focusable:focus-visible {
         outline: 2px solid #f1ece6;
     }
@@ -22,5 +24,25 @@
     .navbar-link:hover::after {
         width: 100%;
         transition: width 300ms ease-out;
+    }
+
+    .hamburger {
+        position: relative;
+        z-index: 11;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        flex-direction: column;
+        width: auto;
+
+        .line {
+            width: 2rem;
+            height: .2rem;
+            background-color: white;
+        }
+    }
+
+    .hamburger .line:nth-child(2) {
+        margin-left: .9rem;
     }
 }

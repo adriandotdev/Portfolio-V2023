@@ -112,7 +112,7 @@ function About() {
                   <h3 className={`fs-4 p-0 m-0 text-center text-xl-start ${isNightMode && 'text-contrastColor'}`}>
                     Prototype and Software Exposition
                   </h3>
-                  <p className={`fs-6 fst-italic text-center text-xl-start ${isNightMode && 'text-darkModeAccentColor'}`}>
+                  <p className={`fs-6 fst-italic text-center text-xl-start ${isNightMode && 'text-contrastColor'}`}>
                     associated by Pamantasan ng Cabuyao
                   </p>
                 </ListGroup.Item>
@@ -121,7 +121,7 @@ function About() {
                   <h3 className={`fs-4 p-0 m-0 text-center text-xl-start ${isNightMode && 'text-contrastColor'}`}>
                     Front End Developer Intern
                   </h3>
-                  <p className={`fs-6 fst-italic text-center text-xl-start ${isNightMode && 'text-darkModeAccentColor'}`}>
+                  <p className={`fs-6 fst-italic text-center text-xl-start ${isNightMode && 'text-contrastColor'}`}>
                     at Pixel8 Web Solutions & Consultancy Inc (February - April 2023)
                   </p>
                 </ListGroup.Item>
@@ -130,7 +130,7 @@ function About() {
                   <h3 className={`fs-4 p-0 m-0 text-center text-xl-start ${isNightMode && 'text-contrastColor'}`}>
                     Programming Training and Competition (Finalist)
                   </h3>
-                  <p className={`fs-6 fst-italic text-center text-xl-start ${isNightMode && 'text-darkModeAccentColor'}`}>
+                  <p className={`fs-6 fst-italic text-center text-xl-start ${isNightMode && 'text-contrastColor'}`}>
                     by Association of Computer Science Students (ACSS)
                   </p>
                 </ListGroup.Item>

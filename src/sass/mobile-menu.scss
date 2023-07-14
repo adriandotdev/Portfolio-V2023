@@ -1,0 +1,22 @@
+.mobile-menu {
+
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000B20;
+
+    .backdrop {
+        position: absolute;
+        bottom: -13rem;
+        width: 20rem;
+        height: 20rem;
+        background-color: purple;
+        border-radius: 50%;
+
+        filter: blur(190px);
+        background-blend-mode: multiply;
+    }
+}
