@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 function Certificates() {
 
-  const { isNightMode } = useContext(ThemeContext);
+  const { isNightMode, filters } = useContext(ThemeContext);
 
   const containerAnimation = {
     initial: {
@@ -178,13 +178,13 @@ function Certificates() {
         </Col>
       </motion.div>
 
-      {isNightMode && <div>
+      {isNightMode && <motion.div variants={filters} viewport="viewport">
         <div className="cert-bg-night" role='img' loading='lazy'></div>
-      </div>}
+      </motion.div>}
 
-      {!isNightMode && <div>
+      {!isNightMode && <motion.div variants={filters} viewport="viewport">
         <div className="cert-bg-light" role='img' loading='lazy'></div>
-      </div>}
+      </motion.div>}
     </motion.div>
   )
 }

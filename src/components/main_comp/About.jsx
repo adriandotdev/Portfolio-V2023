@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 function About() {
 
-  const { isNightMode } = useContext(ThemeContext);
+  const { isNightMode, filters } = useContext(ThemeContext);
 
   const titleSection = {
     initial: {
@@ -164,13 +164,13 @@ function About() {
         </motion.div>
       </motion.div>
 
-      {isNightMode && <div>
+      {isNightMode && <motion.div variants={filters} viewport="viewport">
         <div className="about-bg-night" role='img' loading='lazy'></div>
-      </div>}
+      </motion.div>}
 
-      {!isNightMode && <div>
+      {!isNightMode && <motion.div variants={filters} viewport="viewport">
         <div className="about-bg-light" role='img' loading='lazy'></div>
-      </div>}
+      </motion.div>}
     </motion.div>
   )
 }

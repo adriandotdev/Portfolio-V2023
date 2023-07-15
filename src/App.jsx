@@ -17,7 +17,11 @@ function App() {
   const aboutRef = useRef();
   const [isNightMode, setNightMode] = useState(true);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const filters = {
+    viewport: {
+      once: true
+    }
+  }
 
   useLayoutEffect(() => {
     document.title = 'Adrian Nads Marcelo | Portfolio';
@@ -43,7 +47,7 @@ function App() {
 
   return (
     <div>
-      <ThemeContext.Provider value={{ isNightMode, setNightMode, isMobileMenuOpen, setMobileMenuOpen, aboutRef }}>
+      <ThemeContext.Provider value={{ isNightMode, setNightMode, isMobileMenuOpen, setMobileMenuOpen, aboutRef, filters }}>
         <Navbar />
         <Main />
         <AnimatePresence>

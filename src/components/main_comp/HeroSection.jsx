@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 function HeroSection() {
 
-  const { isNightMode } = useContext(ThemeContext);
+  const { isNightMode, filters } = useContext(ThemeContext);
 
   const titleContainer = {
 
@@ -159,13 +159,13 @@ function HeroSection() {
 
       </div >
 
-      {isNightMode && <div >
+      {isNightMode && <motion.div variants={filters} viewport="viewport">
         <div className='hero-bg' role='img' loading='lazy'></div>
         <div className='hero-bg2' role='img' loading='lazy'></div>
         <div className='hero-bg3' role='img' loading='lazy'></div>
-      </div>}
+      </motion.div>}
 
-      {!isNightMode && <div>
+      {!isNightMode && <motion.div variants={filters} viewport="viewport">
 
         <div className='hero-bg-light' role='img' loading='lazy'></div>
 
@@ -174,7 +174,7 @@ function HeroSection() {
         <div className='hero-bg-light3' role='img' loading='lazy'></div>
 
         <div className='hero-bg-light4' role='img' loading='lazy'></div>
-      </div>}
+      </motion.div>}
     </div>
   )
 }

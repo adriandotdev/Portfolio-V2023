@@ -1,17 +1,12 @@
 import { useContext } from 'react'
 import { Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
-
 import ProjectTechnology from '../sub_comp/ProjectTechnology';
-
-import '../../css/main.css';
-
 import { ThemeContext } from '../../App';
-
 import { motion } from 'framer-motion';
 
 function Skills() {
 
-  const { isNightMode } = useContext(ThemeContext);
+  const { isNightMode, filters } = useContext(ThemeContext);
 
   const containerAnimation = {
     initial: {
@@ -390,13 +385,13 @@ function Skills() {
         </motion.div>
       </motion.div>
 
-      {isNightMode && <div>
+      {isNightMode && <motion.div variants={filters} viewport="viewport">
         <div className="skills-bg-night" role='img' loading='lazy'></div>
-      </div>}
+      </motion.div>}
 
-      {!isNightMode && <div>
+      {!isNightMode && <motion.div variants={filters} viewport="viewport">
         <div className="skills-bg-light" role='img' loading='lazy'></div>
-      </div>}
+      </motion.div>}
     </motion.div>
   )
 }

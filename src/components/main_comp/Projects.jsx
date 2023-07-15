@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 
 function Projects() {
 
-  const { isNightMode } = useContext(ThemeContext);
+  const { isNightMode, filters } = useContext(ThemeContext);
 
   const containerAnimation = {
     initial: {
@@ -452,14 +452,14 @@ function Projects() {
       </motion.div>
 
 
-      {isNightMode && <div>
+      {isNightMode && <motion.div>
         <div className="projects-bg-night" role='img' loading='lazy'></div>
         <div className="projects-bg-night2" role='img' loading='lazy'></div>
-      </div>}
+      </motion.div>}
 
-      {!isNightMode && <div>
+      {!isNightMode && <motion.div>
         <div className="projects-bg-light" role='img' loading='lazy'></div>
-      </div>}
+      </motion.div>}
     </motion.div>
   )
 }
