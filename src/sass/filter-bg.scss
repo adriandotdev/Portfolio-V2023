@@ -11,7 +11,23 @@
     transform: skewX(30deg);
     // border-radius: 50%;
     filter: blur(250px);
+
+    -webkit-filter: blur(250px);
+    /* Safari and Chrome */
+    -moz-filter: blur(250px);
+    /* Firefox */
+    -o-filter: blur(250px);
+    /* Opera */
+    -ms-filter: blur(250px);
+    /* Internet Explorer */
     background-blend-mode: multiply;
+
+    -webkit-background-blend-mode: multiply;
+    /* Safari and Chrome */
+    -moz-background-blend-mode: multiply;
+    /* Firefox */
+    -o-background-blend-mode: multiply;
+    /* Opera */
     z-index: -1;
 }
 
@@ -27,7 +43,6 @@
     transform: skewX(30deg);
     // border-radius: 50%;
     filter: blur(250px);
-    background-blend-mode: multiply;
     z-index: -1;
 }
 
@@ -43,6 +58,7 @@
     transform: skewX(30deg);
     // border-radius: 50%;
     filter: blur(350px);
+
     background-blend-mode: multiply;
     z-index: -1;
 }
@@ -134,7 +150,7 @@
     position: absolute;
     width: 20rem;
     height: 20rem;
-    background: orange;
+    background: lightblue;
 
     bottom: 0;
     left: 50%;
@@ -166,15 +182,16 @@
 
 .skills-bg-light {
     position: absolute;
-    width: 30rem;
-    height: 30rem;
-    background: lightsteelblue;
+    width: 20rem;
+    height: 20rem;
+    background: rgb(97, 217, 233);
 
-    bottom: 0;
+    top: 30%;
     left: 50%;
 
-    border-radius: 50%;
-    filter: blur(350px);
+    transform: skewX(-30deg);
+    // border-radius: 50%;
+    filter: blur(250px);
     background-blend-mode: multiply;
     z-index: -1;
 }

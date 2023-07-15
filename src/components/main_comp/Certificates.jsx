@@ -179,11 +179,11 @@ function Certificates() {
       </motion.div>
 
       {isNightMode && <div>
-        <div className="cert-bg-night"></div>
+        <div className="cert-bg-night" role='img' loading='lazy'></div>
       </div>}
 
       {!isNightMode && <div>
-        <div className="cert-bg-light"></div>
+        <div className="cert-bg-light" role='img' loading='lazy'></div>
       </div>}
     </motion.div>
   )

@@ -391,11 +391,11 @@ function Skills() {
       </motion.div>
 
       {isNightMode && <div>
-        <div className="skills-bg-night"></div>
+        <div className="skills-bg-night" role='img' loading='lazy'></div>
       </div>}
 
       {!isNightMode && <div>
-        <div className="skills-bg-light"></div>
+        <div className="skills-bg-light" role='img' loading='lazy'></div>
       </div>}
     </motion.div>
   )

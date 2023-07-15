@@ -160,20 +160,20 @@ function HeroSection() {
       </div >
 
       {isNightMode && <div >
-        <div className='hero-bg'></div>
-        <div className='hero-bg2'></div>
-        <div className='hero-bg3'></div>
+        <div className='hero-bg' role='img' loading='lazy'></div>
+        <div className='hero-bg2' role='img' loading='lazy'></div>
+        <div className='hero-bg3' role='img' loading='lazy'></div>
       </div>}
 
       {!isNightMode && <div>
 
-        <div className='hero-bg-light'></div>
+        <div className='hero-bg-light' role='img' loading='lazy'></div>
 
-        <div className='hero-bg-light2'></div>
+        <div className='hero-bg-light2' role='img' loading='lazy'></div>
 
-        <div className='hero-bg-light3'></div>
+        <div className='hero-bg-light3' role='img' loading='lazy'></div>
 
-        <div className='hero-bg-light4'></div>
+        <div className='hero-bg-light4' role='img' loading='lazy'></div>
       </div>}
     </div>
   )

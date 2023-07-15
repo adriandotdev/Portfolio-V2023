@@ -165,11 +165,11 @@ function About() {
       </motion.div>
 
       {isNightMode && <div>
-        <div className="about-bg-night"></div>
+        <div className="about-bg-night" role='img' loading='lazy'></div>
       </div>}
 
       {!isNightMode && <div>
-        <div className="about-bg-light"></div>
+        <div className="about-bg-light" role='img' loading='lazy'></div>
       </div>}
     </motion.div>
   )
