@@ -79,7 +79,14 @@ function Navbar() {
               className="focusable navbar-brand fw-bold"
               onClick={() => {
                 document.querySelector('#scrollspyHeroSection').scrollIntoView({ behavior: 'smooth' });
-              }}>
+              }}
+              onKeyDown={(e) => {
+                if (e.key === " " || e.key === "Enter") {
+                  e.preventDefault();
+                  document.querySelector('#scrollspyHeroSection').scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
               <img id="nav-icon" src="/images/Logo.png" alt="Nads' portfolio logo" />
             </a>
           </div>
@@ -112,23 +119,28 @@ function Navbar() {
             {
               items.map(item => (
                 <a
+
                   tabIndex='0'
                   role='button'
                   key={item.scrollSpy}
                   onClick={() => {
                     document.querySelector(item.scrollSpy).scrollIntoView({ behavior: 'smooth' });
                   }}
+                  onKeyDown={(e) => {
+                    if (e.key === " " || e.key === "Enter") {
+                      e.preventDefault();
+                      document.querySelector(item.scrollSpy).scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
                   className="focusable navbar-link h6 text-decoration-none mb-0 text-darkModeAccentColor fw-bold text-nowrap">{item.title}</a>
               ))
             }
-            {/* <a className="focusable navbar-link h6 text-decoration-none mb-0 text-darkModeAccentColor fw-bold text-nowrap" href="#scrollspyAboutMe">About Me</a>
-            <a className="focusable navbar-link h6 text-decoration-none mb-0 text-darkModeAccentColor fw-bold text-nowrap" href="#scrollspySkills">Skills</a>
-            <a className="focusable navbar-link h6 text-decoration-none mb-0 text-darkModeAccentColor fw-bold text-nowrap" href="#scrollspyCertificates">Certificates</a>
-            <a className="focusable navbar-link h6 text-decoration-none mb-0 text-darkModeAccentColor fw-bold text-nowrap" href="#scrollspyProjects">Projects</a> */}
+
+            {/* Toggle Button (Day/Night Mode) */}
             <div className='focusable' role="button" tabIndex="0" onClick={() => {
               setNightMode((prevValue) => !prevValue);
             }} onKeyDown={(e) => {
-              if (e.key === " ") {
+              if (e.key === " " || e.key === "Enter") {
                 e.preventDefault();
                 setNightMode((prevValue) => !prevValue);
               }
