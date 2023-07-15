@@ -452,14 +452,14 @@ function Projects() {
       </motion.div>
 
 
-      {isNightMode && <motion.div>
+      {/* {isNightMode && <motion.div>
         <div className="projects-bg-night" role='img' loading='lazy'></div>
-        {/* <div className="projects-bg-night2" role='img' loading='lazy'></div> */}
+        <div className="projects-bg-night2" role='img' loading='lazy'></div>
       </motion.div>}
 
       {!isNightMode && <motion.div>
         <div className="projects-bg-light" role='img' loading='lazy'></div>
-      </motion.div>}
+      </motion.div>} */}
     </motion.div>
   )
 }

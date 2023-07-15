@@ -158,10 +158,10 @@ function HeroSection() {
         </div>
 
       </div >
-
+      {/* 
       {isNightMode && <motion.div variants={filters} viewport="viewport">
         <div className='hero-bg' role='img' loading='lazy'></div>
-        {/* <div className='hero-bg2' role='img' loading='lazy'></div> */}
+        <div className='hero-bg2' role='img' loading='lazy'></div>
         <div className='hero-bg3' role='img' loading='lazy'></div>
       </motion.div>}
 
@@ -174,7 +174,7 @@ function HeroSection() {
         <div className='hero-bg-light3' role='img' loading='lazy'></div>
 
         <div className='hero-bg-light4' role='img' loading='lazy'></div>
-      </motion.div>}
+      </motion.div>} */}
     </div>
   )
 }
