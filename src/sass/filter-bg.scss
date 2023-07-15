@@ -39,12 +39,9 @@
     width: 10rem;
     height: 10rem;
     background: rgb(29, 143, 158);
-
     bottom: 0;
     left: 50%;
-
     transform: skewX(-30deg);
-    // border-radius: 50%;
     filter: blur(150px);
     background-blend-mode: multiply;
     z-index: -1;
@@ -70,10 +67,8 @@
     width: 15rem;
     height: 15rem;
     background: rgb(29, 143, 158);
-
     top: 30%;
     left: 50%;
-
     transform: skewX(-30deg);
     // border-radius: 50%;
     filter: blur(150px);
@@ -87,10 +82,8 @@
     width: 10rem;
     height: 10rem;
     background: rgb(255, 227, 175);
-
     bottom: 0;
     left: 50%;
-
     border-radius: 50%;
     filter: blur(100px);
     background-blend-mode: multiply;
@@ -106,9 +99,7 @@
 
     top: 30%;
     left: 50%;
-
     transform: skewX(30deg);
-    // border-radius: 50%;
     filter: blur(150px);
     background-blend-mode: multiply;
     z-index: -1;
@@ -120,10 +111,8 @@
     width: 20rem;
     height: 20rem;
     background: rgb(255, 227, 175);
-
     top: 30%;
     left: 50%;
-
     border-radius: 50%;
     filter: blur(100px);
     background-blend-mode: multiply;
