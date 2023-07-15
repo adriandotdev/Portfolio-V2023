@@ -1,63 +1,16 @@
 .hero-bg {
 
     position: absolute;
-    width: 20rem;
-    height: 20rem;
+    width: 9rem;
+    height: 60rem;
     background: rgb(29, 143, 158);
 
-    bottom: 0;
+    top: 0;
     left: 50%;
 
     transform: skewX(30deg);
     // border-radius: 50%;
-    filter: blur(250px);
-
-    -webkit-filter: blur(250px);
-    /* Safari and Chrome */
-    -moz-filter: blur(250px);
-    /* Firefox */
-    -o-filter: blur(250px);
-    /* Opera */
-    -ms-filter: blur(250px);
-    /* Internet Explorer */
-    background-blend-mode: multiply;
-
-    -webkit-background-blend-mode: multiply;
-    /* Safari and Chrome */
-    -moz-background-blend-mode: multiply;
-    /* Firefox */
-    -o-background-blend-mode: multiply;
-    /* Opera */
-    z-index: -1;
-}
-
-.hero-bg2 {
-
-    position: absolute;
-    width: 20rem;
-    height: 20rem;
-    background: rgb(25, 123, 136);
-
-    bottom: 0;
-    left: 50%;
-    transform: skewX(30deg);
-    // border-radius: 50%;
-    filter: blur(250px);
-    z-index: -1;
-}
-
-.hero-bg3 {
-
-    position: absolute;
-    width: 20rem;
-    height: 20rem;
-    background: purple;
-
-    bottom: 0;
-    left: 70%;
-    transform: skewX(30deg);
-    // border-radius: 50%;
-    filter: blur(350px);
+    filter: blur(150px);
 
     background-blend-mode: multiply;
     z-index: -1;
@@ -65,99 +18,48 @@
 
 .hero-bg-light {
     position: absolute;
-    width: 1rem;
-    height: 40rem;
-    background: indigo;
-
-    top: 0;
-    left: 50%;
-
-    transform: skewX(-50deg);
-    // border-radius: 50%;
-    filter: blur(90px);
-    background-blend-mode: multiply;
-    z-index: -1;
-}
-
-.hero-bg-light2 {
-    position: absolute;
-    width: 5rem;
-    height: 40rem;
-    background: lightblue;
-
-    top: 0;
-    left: 60%;
-
-    transform: skewX(-50deg);
-    // border-radius: 50%;
-    filter: blur(90px);
-    background-blend-mode: multiply;
-    z-index: -1;
-}
-
-.hero-bg-light3 {
-    position: absolute;
-    width: 1rem;
-    height: 40rem;
-    background: orange;
-
-    top: 0;
-    left: 70%;
-
-    transform: skewX(-50deg);
-    // border-radius: 50%;
-    filter: blur(100px);
-    background-blend-mode: multiply;
-    z-index: -1;
-}
-
-.hero-bg-light3 {
-    position: absolute;
     width: 20rem;
-    height: 40rem;
-    background: rgb(255, 164, 255);
+    height: 20rem;
+    background: rgb(255, 227, 175);
 
-    top: 5%;
-    left: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // transform: skewX(30deg);
+    border-radius: 50%;
+    filter: blur(100px);
 
-    transform: skewX(-50deg);
-    // border-radius: 50%;
-    filter: blur(450px);
     background-blend-mode: multiply;
     z-index: -1;
 }
-
 
 // About
 .about-bg-night {
     position: absolute;
-    width: 20rem;
-    height: 20rem;
+    width: 10rem;
+    height: 10rem;
     background: rgb(29, 143, 158);
-
-    top: 30%;
-    left: 50%;
-
-    transform: skewX(-30deg);
-    // border-radius: 50%;
-    filter: blur(350px);
-    background-blend-mode: multiply;
-    z-index: -1;
-}
-
-
-.about-bg-light {
-    position: absolute;
-    width: 20rem;
-    height: 20rem;
-    background: lightblue;
 
     bottom: 0;
     left: 50%;
 
     transform: skewX(-30deg);
     // border-radius: 50%;
-    filter: blur(350px);
+    filter: blur(150px);
+    background-blend-mode: multiply;
+    z-index: -1;
+}
+
+.about-bg-light {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background: rgb(255, 227, 175);
+
+    bottom: 0;
+    left: 50%;
+    // border-radius: 50%;
+    filter: blur(100px);
     background-blend-mode: multiply;
     z-index: -1;
 }
@@ -165,16 +67,16 @@
 // Skills
 .skills-bg-night {
     position: absolute;
-    width: 20rem;
-    height: 20rem;
-    background: rgb(97, 217, 233);
+    width: 15rem;
+    height: 15rem;
+    background: rgb(29, 143, 158);
 
     top: 30%;
     left: 50%;
 
     transform: skewX(-30deg);
     // border-radius: 50%;
-    filter: blur(250px);
+    filter: blur(150px);
     background-blend-mode: multiply;
     z-index: -1;
 }
@@ -182,16 +84,15 @@
 
 .skills-bg-light {
     position: absolute;
-    width: 20rem;
-    height: 20rem;
-    background: rgb(97, 217, 233);
+    width: 10rem;
+    height: 10rem;
+    background: rgb(255, 227, 175);
 
-    top: 30%;
+    bottom: 0;
     left: 50%;
 
-    transform: skewX(-30deg);
-    // border-radius: 50%;
-    filter: blur(250px);
+    border-radius: 50%;
+    filter: blur(100px);
     background-blend-mode: multiply;
     z-index: -1;
 }
@@ -201,7 +102,7 @@
     position: absolute;
     width: 3rem;
     height: 50rem;
-    background: rgb(97, 217, 233);
+    background: rgb(29, 143, 158);
 
     top: 30%;
     left: 50%;
@@ -216,16 +117,15 @@
 
 .cert-bg-light {
     position: absolute;
-    width: 3rem;
-    height: 50rem;
-    background: rgb(29, 143, 158);
+    width: 20rem;
+    height: 20rem;
+    background: rgb(255, 227, 175);
 
     top: 30%;
     left: 50%;
 
-    transform: skewX(30deg);
-    // border-radius: 50%;
-    filter: blur(150px);
+    border-radius: 50%;
+    filter: blur(100px);
     background-blend-mode: multiply;
     z-index: -1;
 }
@@ -235,47 +135,24 @@
     position: absolute;
     width: 10rem;
     height: 50rem;
-    background: rgb(97, 217, 233);
-
+    background: rgb(29, 143, 158);
     top: 30%;
     left: 50%;
-
     transform: skewX(30deg);
-    // border-radius: 50%;
-    filter: blur(280px);
-    background-blend-mode: multiply;
-    z-index: -1;
-}
-
-.projects-bg-night2 {
-    position: absolute;
-    width: 10rem;
-    height: 50rem;
-    background: lightsteelblue;
-
-    bottom: 0%;
-    left: 50%;
-
-    transform: skewX(-30deg);
-    // border-radius: 50%;
-    filter: blur(300px);
+    filter: blur(150px);
     background-blend-mode: multiply;
     z-index: -1;
 }
 
 .projects-bg-light {
-    // rgb(29, 143, 158);
     position: absolute;
     width: 10rem;
-    height: 50rem;
-    background: rgb(60, 198, 216);
-
+    height: 10rem;
+    background: rgb(255, 227, 175);
     top: 30%;
     left: 50%;
-
-    transform: skewX(30deg);
-    // border-radius: 50%;
-    filter: blur(180px);
+    border-radius: 50%;
+    filter: blur(100px);
     background-blend-mode: multiply;
     z-index: -1;
 }
