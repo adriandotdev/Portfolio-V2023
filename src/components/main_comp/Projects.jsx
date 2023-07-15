@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 
 function Projects() {
 
-  const { isNightMode } = useContext(ThemeContext);
+  const { isNightMode, aboutRef } = useContext(ThemeContext);
 
   const containerAnimation = {
     initial: {
@@ -130,7 +130,7 @@ function Projects() {
     }
   }
   return (
-    <motion.div variants={containerAnimation} initial="initial" whileInView="whileInView" viewport="viewport" id="scrollspyProjects" className="container my-8">
+    <motion.div variants={containerAnimation} initial="initial" whileInView="whileInView" viewport="viewport" id="scrollspyProjects" className="container my-8 pt-5">
       <motion.div variants={containerAnimation} viewport="viewport">
         <motion.h1 variants={fromBottomAnimation} viewport="viewport" className={`display-5 text-center mt-5 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Projects</motion.h1>
         <motion.p variants={fromBottomAnimation} viewport="viewport" className={`section--heading__divider mt-0 text-center ${isNightMode ? "text-contrastColor divider__darkmode" : "text-dark divider__daymode"}`}>N</motion.p>

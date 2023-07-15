@@ -62,7 +62,7 @@ function About() {
   }
 
   return (
-    <motion.div variants={titleSection} initial="initial" whileInView="whileInView" viewport="viewport" id="scrollspyAboutMe" className="about container mt-5 pt-5">
+    <motion.div id="scrollspyAboutMe" variants={titleSection} initial="initial" whileInView="whileInView" viewport="viewport" className="about container mt-8 pt-5">
       <motion.div variants={titleSection} viewport="viewport" className='section__title'>
         <motion.h1 variants={titleAnimation} viewport="viewport" className={`display-5 text-center m-0 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>About</motion.h1>
         <motion.p variants={titleAnimation} viewport="viewport" className={`section--heading__divider mt-0 text-center ${isNightMode ? "text-contrastColor divider__darkmode" : "text-dark divider__daymode"}`}>N</motion.p>

@@ -111,7 +111,7 @@ function HeroSection() {
 
   return (
 
-    <div className={`hero-page container ${isNightMode && 'hero-page--body__darkmode'}`}>
+    <div id="scrollspyHeroSection" className={`hero-page container ${isNightMode && 'hero-page--body__darkmode'}`}>
       <div className="hero-content row justify-content-center">
         <motion.div variants={titleContainer} initial="initial" whileInView="whileInView" viewport="viewport" className="col align-self-center">
           <motion.h1 variants={titleAnimation} viewport="viewport"
