@@ -389,6 +389,14 @@ function Skills() {
           </motion.div>
         </motion.div>
       </motion.div>
+
+      {isNightMode && <div>
+        <div className="skills-bg-night"></div>
+      </div>}
+
+      {!isNightMode && <div>
+        <div className="skills-bg-light"></div>
+      </div>}
     </motion.div>
   )
 }

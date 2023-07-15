@@ -4,13 +4,14 @@ import { Row, Col } from 'react-bootstrap';
 
 // User Defined Components
 import ProjectTechnology from '../sub_comp/ProjectTechnology';
+import '../../css/filter-bg.min.css';
 import '../../css/main.css';
 import { ThemeContext } from '../../App';
 import { motion } from 'framer-motion';
 
 function Projects() {
 
-  const { isNightMode, aboutRef } = useContext(ThemeContext);
+  const { isNightMode } = useContext(ThemeContext);
 
   const containerAnimation = {
     initial: {
@@ -130,7 +131,7 @@ function Projects() {
     }
   }
   return (
-    <motion.div variants={containerAnimation} initial="initial" whileInView="whileInView" viewport="viewport" id="scrollspyProjects" className="container my-8 pt-5">
+    <motion.div variants={containerAnimation} initial="initial" whileInView="whileInView" viewport="viewport" id="scrollspyProjects" className="projects container my-8 pt-5">
       <motion.div variants={containerAnimation} viewport="viewport">
         <motion.h1 variants={fromBottomAnimation} viewport="viewport" className={`display-5 text-center mt-5 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Projects</motion.h1>
         <motion.p variants={fromBottomAnimation} viewport="viewport" className={`section--heading__divider mt-0 text-center ${isNightMode ? "text-contrastColor divider__darkmode" : "text-dark divider__daymode"}`}>N</motion.p>
@@ -140,7 +141,7 @@ function Projects() {
       <motion.div variants={containerAnimation} viewport="viewport">
 
         {/* Kayamanan: THPT Project */}
-        <motion.div variants={containerAnimation} viewport="viewport" className={`row p-md-3 mb-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
+        <motion.div variants={containerAnimation} viewport="viewport" className={`row p-md-3 mb-5 ${isNightMode ? "" : ""}`}>
 
           <Col className="col-12 col-lg-6 mb-3 w-100">
             <Row className="row">
@@ -205,7 +206,7 @@ function Projects() {
         </motion.div>
 
         {/* Food Hub Ordering System Project */}
-        <motion.div variants={containerAnimation} viewport="viewport" className={`p-md-3 mb-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
+        <motion.div variants={containerAnimation} viewport="viewport" className={`p-md-3 mb-5 ${isNightMode ? "" : ""}`}>
           <Col className="col-12 col-lg-6 ms-auto mb-3 p-3 w-100">
             <Row className="flex-lg-row-reverse">
               <Col className="col-12 col-lg-6 img--project-container">
@@ -267,7 +268,7 @@ function Projects() {
         </motion.div>
 
         {/* Flashcard Project */}
-        <motion.div variants={containerAnimation} viewport="viewport" className={`row p-md-3 mt-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
+        <motion.div variants={containerAnimation} viewport="viewport" className={`row p-md-3 mt-5 ${isNightMode ? "" : ""}`}>
 
           <Col className="col-12 col-lg-6 mb-3 w-100">
             <Row className="row">
@@ -331,7 +332,7 @@ function Projects() {
         </motion.div>
 
         {/* Recipe Search App */}
-        <motion.div variants={containerAnimation} viewport="viewport" className={`row p-md-3 mt-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
+        <motion.div variants={containerAnimation} viewport="viewport" className={`row p-md-3 mt-5 ${isNightMode ? "" : ""}`}>
 
           <Col className="col-12 col-lg-6 mb-3 w-100">
             <Row className="flex-lg-row-reverse">
@@ -395,7 +396,7 @@ function Projects() {
         </motion.div>
 
         {/* YGO Programming Center */}
-        <motion.div variants={containerAnimation} viewport="viewport" className={`row p-md-3 mt-5 ${isNightMode ? "bg-mostDark" : "bg-light"}`}>
+        <motion.div variants={containerAnimation} viewport="viewport" className={`row p-md-3 mt-5 ${isNightMode ? "" : ""}`}>
 
           <Col className="col-12 col-lg-6 mb-3 w-100">
             <Row className="row">
@@ -450,6 +451,16 @@ function Projects() {
           </Col>
         </motion.div>
       </motion.div>
+
+
+      {isNightMode && <div>
+        <div className="projects-bg-night"></div>
+        <div className="projects-bg-night2"></div>
+      </div>}
+
+      {!isNightMode && <div>
+        <div className="projects-bg-light"></div>
+      </div>}
     </motion.div>
   )
 }

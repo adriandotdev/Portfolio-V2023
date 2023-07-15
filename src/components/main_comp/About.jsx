@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { ListGroup } from 'react-bootstrap'
+import '../../css/filter-bg.min.css';
 import '../../css/main.css';
 import { ThemeContext } from '../../App';
 import { motion } from 'framer-motion';
@@ -163,6 +164,14 @@ function About() {
           </motion.div>
         </motion.div>
       </motion.div>
+
+      {isNightMode && <div>
+        <div className="about-bg-night"></div>
+      </div>}
+
+      {!isNightMode && <div>
+        <div className="about-bg-light"></div>
+      </div>}
     </motion.div>
   )
 }

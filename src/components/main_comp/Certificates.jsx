@@ -60,7 +60,7 @@ function Certificates() {
   }
   return (
 
-    <motion.div variants={containerAnimation} initial="initial" whileInView="whileInView" viewport="viewport" id="scrollspyCertificates" className="container my-5 pt-5">
+    <motion.div variants={containerAnimation} initial="initial" whileInView="whileInView" viewport="viewport" id="scrollspyCertificates" className="certificates container my-5 pt-5">
       <motion.div variants={containerAnimation} viewport="viewport">
         <motion.h1 variants={titleAnimation} viewport="viewport" className={`display-5 text-center mt-5 fw-bold ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>Certificates</motion.h1>
 
@@ -177,6 +177,14 @@ function Certificates() {
           </div>
         </Col>
       </motion.div>
+
+      {isNightMode && <div>
+        <div className="cert-bg-night"></div>
+      </div>}
+
+      {!isNightMode && <div>
+        <div className="cert-bg-light"></div>
+      </div>}
     </motion.div>
   )
 }

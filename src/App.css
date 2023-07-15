@@ -14,7 +14,8 @@
 
 body,
 html {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  /* width: 100vh; */
 }
 
 /* ------------------- SWITCH ICON ------------------------- */
@@ -137,7 +138,12 @@ html {
 /* --------------------------- END OF HEADING DIVIDER ------------------------ */
 
 /* --------------------------- HERO SECTION ------------------------------ */
+.hero-section {
+  position: relative;
+}
+
 .hero-page {
+
   padding: 6rem 0;
   padding-bottom: 0;
 }
@@ -221,9 +227,25 @@ html {
 
 /* ---------------------------- END OF HERO SECTION ---------------------- */
 
+.about {
+  position: relative;
+}
+
 #about--paragraph {
 
   font-family: 'Montserrat', sans-serif;
+}
+
+.skills {
+  position: relative;
+}
+
+.certificates {
+  position: relative;
+}
+
+.projects {
+  position: relative;
 }
 
 .project-icon {
@@ -308,13 +330,14 @@ nav::before {
     content: "";
     display: block;
     inset: 0;
-    background: linear-gradient(to top, var(--dark), var(--secondaryColor));
+    /* background: linear-gradient(to top, var(--dark), var(--secondaryColor)); */
     position: absolute;
     z-index: -2;
   }
 
   .hero-content {
     min-height: 100vh;
+    /* position: relative; */
   }
 
   #hero-page__subheading {
