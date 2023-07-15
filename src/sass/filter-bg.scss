@@ -1,17 +1,12 @@
 .hero-bg {
-
     position: absolute;
     width: 9rem;
     height: 60rem;
     background: rgb(29, 143, 158);
-
     top: 0;
     left: 50%;
-
     transform: skewX(30deg);
-    // border-radius: 50%;
     filter: blur(150px);
-
     background-blend-mode: multiply;
     z-index: -1;
 }
@@ -21,14 +16,11 @@
     width: 20rem;
     height: 20rem;
     background: rgb(255, 227, 175);
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    // transform: skewX(30deg);
     border-radius: 50%;
     filter: blur(100px);
-
     background-blend-mode: multiply;
     z-index: -1;
 }
