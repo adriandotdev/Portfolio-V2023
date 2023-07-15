@@ -21,8 +21,9 @@ function App() {
   useLayoutEffect(() => {
     document.title = 'Adrian Nads Marcelo | Portfolio';
     console.log("Rendered");
-  }, [])
+  }, []);
 
+  // Registering resize event
   useEffect(() => {
 
     const resize = () => {

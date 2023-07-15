@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState, useEffect, useRef, useContext } from 'react'
+import { useState, useEffect, useRef, useContext } from 'react'
 
 import { ThemeContext } from '../../App';
 import '../../css/navbar.min.css';
@@ -48,13 +48,38 @@ function Navbar() {
     }
   }, [isNightMode])
 
+  const items = [
+    {
+      scrollSpy: '#scrollspyAboutMe',
+      title: 'About'
+    },
+    {
+      scrollSpy: '#scrollspySkills',
+      title: 'Skills'
+    },
+    {
+      scrollSpy: '#scrollspyCertificates',
+      title: 'Certificates'
+    },
+    {
+      scrollSpy: '#scrollspyProjects',
+      title: 'Projects'
+    }
+  ]
+
   return (
     <nav ref={navRef} id="portfolio-navbar" className={`portfolio-navbar navbar px-3 navbar-expand-lg fixed-top navbar-dark bg-dark 
     ${isWindowScrolled && isNightMode && ""}`} >
       <div className="container">
         <div className="row w-100 justify-content-between justify-content-sm-between align-items-center">
           <div className="col-6">
-            <a className="focusable navbar-brand fw-bold" href="#">
+            <a
+              tabIndex='0'
+              role='button'
+              className="focusable navbar-brand fw-bold"
+              onClick={() => {
+                document.querySelector('#scrollspyHeroSection').scrollIntoView({ behavior: 'smooth' });
+              }}>
               <img id="nav-icon" src="/images/Logo.png" alt="Nads' portfolio logo" />
             </a>
           </div>
@@ -80,12 +105,26 @@ function Navbar() {
         </div>
 
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+
           <div className="navbar-nav d-flex column gap-4 d-lg-flex gap-lg-4 align-items-lg-center pt-4 pb-4 pt-lg-0 pb-lg-0">
-            <a className="focusable navbar-link h6 text-decoration-none mb-0 text-darkModeAccentColor fw-bold text-nowrap" href="#scrollspyAboutMe">About Me</a>
+
+            {/* Navbar Items */}
+            {
+              items.map(item => (
+                <a
+                  tabIndex='0'
+                  role='button'
+                  key={item.scrollSpy}
+                  onClick={() => {
+                    document.querySelector(item.scrollSpy).scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="focusable navbar-link h6 text-decoration-none mb-0 text-darkModeAccentColor fw-bold text-nowrap">{item.title}</a>
+              ))
+            }
+            {/* <a className="focusable navbar-link h6 text-decoration-none mb-0 text-darkModeAccentColor fw-bold text-nowrap" href="#scrollspyAboutMe">About Me</a>
             <a className="focusable navbar-link h6 text-decoration-none mb-0 text-darkModeAccentColor fw-bold text-nowrap" href="#scrollspySkills">Skills</a>
             <a className="focusable navbar-link h6 text-decoration-none mb-0 text-darkModeAccentColor fw-bold text-nowrap" href="#scrollspyCertificates">Certificates</a>
-            <a className="focusable navbar-link h6 text-decoration-none mb-0 text-darkModeAccentColor fw-bold text-nowrap" href="#scrollspyProjects">Projects</a>
-
+            <a className="focusable navbar-link h6 text-decoration-none mb-0 text-darkModeAccentColor fw-bold text-nowrap" href="#scrollspyProjects">Projects</a> */}
             <div className='focusable' role="button" tabIndex="0" onClick={() => {
               setNightMode((prevValue) => !prevValue);
             }} onKeyDown={(e) => {
