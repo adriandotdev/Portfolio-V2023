@@ -178,13 +178,13 @@ function Certificates() {
         </Col>
       </motion.div>
 
-      {isNightMode && <motion.div variants={filters} viewport="viewport">
+      {/* {isNightMode && <motion.div variants={filters} viewport="viewport">
         <div className="cert-bg-night" role='img' loading='lazy'></div>
       </motion.div>}
 
       {!isNightMode && <motion.div variants={filters} viewport="viewport">
         <div className="cert-bg-light" role='img' loading='lazy'></div>
-      </motion.div>}
+      </motion.div>} */}
     </motion.div>
   )
 }

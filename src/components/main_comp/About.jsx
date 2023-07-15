@@ -163,14 +163,14 @@ function About() {
           </motion.div>
         </motion.div>
       </motion.div>
-
+      {/* 
       {isNightMode && <motion.div variants={filters} viewport="viewport">
         <div className="about-bg-night" role='img' loading='lazy'></div>
       </motion.div>}
 
       {!isNightMode && <motion.div variants={filters} viewport="viewport">
         <div className="about-bg-light" role='img' loading='lazy'></div>
-      </motion.div>}
+      </motion.div>} */}
     </motion.div>
   )
 }

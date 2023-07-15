@@ -161,7 +161,7 @@ function HeroSection() {
 
       {isNightMode && <motion.div variants={filters} viewport="viewport">
         <div className='hero-bg' role='img' loading='lazy'></div>
-        <div className='hero-bg2' role='img' loading='lazy'></div>
+        {/* <div className='hero-bg2' role='img' loading='lazy'></div> */}
         <div className='hero-bg3' role='img' loading='lazy'></div>
       </motion.div>}
 

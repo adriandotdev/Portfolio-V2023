@@ -384,14 +384,14 @@ function Skills() {
           </motion.div>
         </motion.div>
       </motion.div>
-
+      {/* 
       {isNightMode && <motion.div variants={filters} viewport="viewport">
         <div className="skills-bg-night" role='img' loading='lazy'></div>
       </motion.div>}
 
       {!isNightMode && <motion.div variants={filters} viewport="viewport">
         <div className="skills-bg-light" role='img' loading='lazy'></div>
-      </motion.div>}
+      </motion.div>} */}
     </motion.div>
   )
 }
