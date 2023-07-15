@@ -5,7 +5,7 @@ import { FaSun, FaArrowRight, FaMoon } from 'react-icons/fa6'
 
 function MobileNavigation() {
 
-    const { setMobileMenuOpen, isNightMode, setNightMode, aboutRef } = useContext(ThemeContext);
+    const { setMobileMenuOpen, isNightMode, setNightMode } = useContext(ThemeContext);
     const mobileMenuContainer = {
         initial: {
             x: -1000
@@ -94,8 +94,8 @@ function MobileNavigation() {
             scrollSpy: '#scrollspyProjects',
             title: 'Projects'
         }
-
     ]
+
     return (
         <motion.div variants={mobileMenuContainer} initial="initial" animate="animate" exit="exit" className="mobile-menu d-lg-none d-flex flex-column px-4 px-sm-5 gap-5 pt-5">
             <motion.div variants={titleAndBack} initial="initial" animate="animate" exit="exit" className='d-flex align-items-center justify-content-between'>

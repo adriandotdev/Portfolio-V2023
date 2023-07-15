@@ -1,9 +1,9 @@
 import './App.css';
 // import './css/main.css';
-import './css/mobile-menu.css'
+import './css/mobile-menu.min.css'
 import './css/main.min.css'
 
-import { createContext, useState, useLayoutEffect, useRef } from 'react';
+import { createContext, useState, useLayoutEffect, useRef, useEffect } from 'react';
 import Navbar from './components/main_comp/Navbar';
 import Main from './components/main_comp/Main';
 import MobileNavigation from './components/main_comp/MobileNavigation';
@@ -16,12 +16,27 @@ function App() {
   const aboutRef = useRef();
   const [isNightMode, setNightMode] = useState(true);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+
   useLayoutEffect(() => {
     document.title = 'Adrian Nads Marcelo | Portfolio';
     console.log("Rendered");
   }, [])
 
+  useEffect(() => {
 
+    const resize = () => {
+
+      if (window.innerWidth >= 992) {
+        setMobileMenuOpen(false);
+      }
+    }
+    window.addEventListener('resize', resize);
+
+    return () => {
+      window.removeEventListener('resize', resize);
+    }
+  }, [])
 
 
   return (
