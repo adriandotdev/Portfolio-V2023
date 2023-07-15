@@ -3,7 +3,6 @@ import { useContext } from 'react';
 import { ThemeContext } from '../../App';
 import { motion } from 'framer-motion';
 
-import '../../css/filter-bg.min.css';
 import '../../css/main.min.css';
 
 function HeroSection() {

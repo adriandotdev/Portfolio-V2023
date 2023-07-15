@@ -1,5 +1,6 @@
 import './App.css';
 // import './css/main.css';
+import './css/filter-bg.min.css';
 import './css/mobile-menu.min.css'
 import './css/main.min.css'
 

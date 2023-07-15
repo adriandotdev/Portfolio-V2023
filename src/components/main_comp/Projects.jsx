@@ -4,7 +4,6 @@ import { Row, Col } from 'react-bootstrap';
 
 // User Defined Components
 import ProjectTechnology from '../sub_comp/ProjectTechnology';
-import '../../css/filter-bg.min.css';
 import '../../css/main.css';
 import { ThemeContext } from '../../App';
 import { motion } from 'framer-motion';
