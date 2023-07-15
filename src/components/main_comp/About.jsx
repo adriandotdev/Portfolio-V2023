@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { ListGroup } from 'react-bootstrap';
-import '../../css/main.css';
+// import '../../css/main.css';
 import { ThemeContext } from '../../App';
 import { motion } from 'framer-motion';
 
