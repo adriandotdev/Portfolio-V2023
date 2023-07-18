@@ -161,15 +161,15 @@ function Projects() {
                 </div>
               </Col>
               <Col className="col-12 col-lg-6">
-                <motion.h1 variants={fromRightAnimation} viewport="viewport" className={`my-2 text-lg-end font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
+                <motion.h1 variants={fromRightAnimation} viewport="viewport" className={`my-2 text-lg-start font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
                   Kayamanan: The Hunt for Philippine Treasures
                 </motion.h1>
-                <motion.p variants={fromRightAnimation} viewport="viewport" className={`text-lg-end font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
+                <motion.p variants={fromRightAnimation} viewport="viewport" className={`text-lg-start font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
                   Our thesis software fulfills the requirements for the BS Computer Science degree. It is a 2D Android role-playing game that teaches Philippine Culture and History. I was assigned to implement the overall functionalities of the software. During development, I learned how to use object-oriented design patterns such as Observer and Singleton.
                 </motion.p>
 
                 <div className="mb-3">
-                  <motion.div variants={techContainer} viewport="viewport" className="mx-1 row justify-content-lg-end gap-3">
+                  <motion.div variants={techContainer} viewport="viewport" className="mx-1 row justify-content-lg-start gap-3">
 
                     <motion.div variants={fromBottomAnimation} viewport="viewport" className="col-1 m-0 p-0">
                       <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C Sharp programming language" />
@@ -188,7 +188,7 @@ function Projects() {
 
                 {/* Buttons */}
                 <div>
-                  <motion.div variants={ctaContainer} viewport="viewport" className="d-lg-flex justify-content-lg-end gap-2">
+                  <motion.div variants={ctaContainer} viewport="viewport" className="d-lg-flex justify-content-lg-start gap-2">
 
                     <motion.a variants={fromBottomAnimation} viewport="viewport" role="button" target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Kayamanan-A-Hunt-for-Philippine-Treasures-THESIS-"
                     >View Source Code</motion.a
@@ -204,10 +204,78 @@ function Projects() {
           </Col>
         </motion.div>
 
+        {/* YanYan Store */}
+        <motion.div variants={containerAnimation} viewport="viewport" className={`row p-md-3 mb-5 ${isNightMode ? "" : ""}`}>
+
+          <Col className="col-12 col-lg-6 mb-3 w-100">
+            <Row className="flex-lg-row-reverse">
+              <Col className="col-12 col-lg-6 img--project-container">
+                <div className="img-fluid">
+                  <motion.img variants={image} viewport="viewport"
+                    src="/images/projects/Yanyan_Store.png"
+                    alt="Yan-Yan's Store user interface"
+                    className="img-fluid shadow"
+                    loading='lazy'
+                  />
+                  <motion.img variants={image} viewport="viewport"
+                    src="/images/gifs/Products Overview.gif"
+                    alt="Yan-Yan's Store sample output"
+                    style={{ width: '100%' }}
+                    loading='lazy'
+                  />
+                </div>
+              </Col>
+              <Col className="col-12 col-lg-6">
+                <motion.h1 variants={fromRightAnimation} viewport="viewport" className={`my-2 text-lg-start font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
+                  Yan-Yan's Store: PMS
+                </motion.h1>
+                <motion.p variants={fromRightAnimation} viewport="viewport" className={`text-lg-start font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
+                  A Project Management System for our sari-sari store. Here, I applied what I learned in NodeJS, and ExpressJS such as Authorization, and Authentication using http-cookie. I mostly learned by doing this is the CRUD functionality of MongoDB.
+                </motion.p>
+
+                <div className="mb-3">
+                  <motion.div variants={techContainer} viewport="viewport" className="mx-1 row justify-content-lg-start gap-3">
+
+                    <motion.div variants={fromBottomAnimation} viewport="viewport" className="col-1 m-0 p-0">
+                      <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="C Sharp programming language" />
+                    </motion.div>
+
+                    <motion.div variants={fromBottomAnimation} viewport="viewport" className="col-1 m-0 p-0">
+                      <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Unity Game Engine Logo" />
+                    </motion.div>
+
+                    <motion.div variants={fromBottomAnimation} viewport="viewport" className="col-1 m-0 p-0">
+                      <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Android logo" />
+                    </motion.div>
+
+                    <motion.div variants={fromBottomAnimation} viewport="viewport" className="col-1 m-0 p-0">
+                      <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Android logo" />
+                    </motion.div>
+
+                    <motion.div variants={fromBottomAnimation} viewport="viewport" className="col-1 m-0 p-0">
+                      <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Android logo" />
+                    </motion.div>
+                  </motion.div>
+                </div>
+
+                {/* Buttons */}
+                <div>
+                  <motion.div variants={ctaContainer} viewport="viewport" className="d-lg-flex justify-content-lg-start gap-2">
+
+                    <motion.a variants={fromBottomAnimation} viewport="viewport" role="button" target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/yanyan-store/tree/master"
+                    >View Source Code</motion.a
+                    >
+                  </motion.div>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </motion.div>
+
         {/* Food Hub Ordering System Project */}
         <motion.div variants={containerAnimation} viewport="viewport" className={`p-md-3 mb-5 ${isNightMode ? "" : ""}`}>
           <Col className="col-12 col-lg-6 ms-auto mb-3 p-3 w-100">
-            <Row className="flex-lg-row-reverse">
+            <Row className="row">
               <Col className="col-12 col-lg-6 img--project-container">
                 <div className="img-fluid">
                   <motion.img variants={image}
@@ -233,7 +301,7 @@ function Projects() {
                   Our project was focused on System Analysis and Design, as well as Software Engineering. We developed an ordering system for small food businesses, utilizing Responsive Web Design with TailwindCSS, and DaisyUI for pre-made components. We also used React.js for component-based UI and Node.js and Express.js for the backend. Through this project, I learned about state management through ContextAPI, as well as the MVC pattern, with SQL as the Model, React.js as the View, and Express and Node.js as the Controller
                 </motion.p>
                 <motion.div variants={ctaContainer} className="mb-3">
-                  <Row className="justify-content-start gap-2 mx-1">
+                  <Row className="justify-content-lg-start gap-2 mx-1">
                     <motion.div variants={fromBottomAnimation} className="col col-1 m-0 p-0">
                       <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react.js logo" />
                     </motion.div>
@@ -256,7 +324,8 @@ function Projects() {
                     </motion.div>
                   </Row>
                 </motion.div>
-                <motion.div variants={fromBottomAnimation}>
+
+                <motion.div variants={fromBottomAnimation} className='d-flex justify-content-lg-start'>
                   <a target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/Food-Hub-Software-Engineering-" role="button"
                   >View Source Code</a
                   >
@@ -270,7 +339,7 @@ function Projects() {
         <motion.div variants={containerAnimation} viewport="viewport" className={`row p-md-3 mt-5 ${isNightMode ? "" : ""}`}>
 
           <Col className="col-12 col-lg-6 mb-3 w-100">
-            <Row className="row">
+            <Row className="flex-lg-row-reverse">
               <Col className="col-12 col-lg-6 img--project-container">
                 <div className="img-fluid">
                   <motion.img
@@ -293,15 +362,15 @@ function Projects() {
                 </div>
               </Col>
               <Col className="col-12 col-lg-6">
-                <motion.h1 variants={fromRightAnimation} viewport="viewport" className={`my-2 text-lg-end font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
+                <motion.h1 variants={fromRightAnimation} viewport="viewport" className={`my-2 text-lg-start font-montserrat-medium ${isNightMode ? "text-darkModeAccentColor" : "text-dark"}`}>
                   Flashcards
                 </motion.h1>
-                <motion.p variants={fromRightAnimation} viewport="viewport" className={`text-lg-end font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
+                <motion.p variants={fromRightAnimation} viewport="viewport" className={`text-lg-start font-montserrat ${isNightMode ? "text-contrastColor" : "text-bodyTextColor"}`}>
                   This is a simple C.R.U.D app that allows the user to create a set of questions based on their chosen category. Through this project, I learned how to use the 'useReducer' hook to handle complex states.
                 </motion.p>
 
                 <div className="mb-3">
-                  <motion.div variants={techContainer} viewport="viewport" className="mx-1 row justify-content-lg-end gap-3">
+                  <motion.div variants={techContainer} viewport="viewport" className="mx-1 row justify-content-lg-start gap-3">
                     <motion.div variants={fromBottomAnimation} viewport="viewport" className="col-1 m-0 p-0">
                       <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" />
                     </motion.div>
@@ -314,7 +383,7 @@ function Projects() {
 
                 {/* Buttons */}
                 <div>
-                  <motion.div variants={ctaContainer} viewport="viewport" className="d-lg-flex justify-content-lg-end gap-2">
+                  <motion.div variants={ctaContainer} viewport="viewport" className="d-lg-flex justify-content-lg-start gap-2">
 
                     <motion.a variants={fromBottomAnimation} viewport="viewport" role="button" target="blank" className={`btn mx-1 ${isNightMode ? "btn-darkModeAccentColor btn--resume__darkmode" : "btn-darkSecondary btn--resume__daymode"}`} href="https://github.com/adriandotdev/flashcard-vite"
                     >View Source Code</motion.a
@@ -334,7 +403,7 @@ function Projects() {
         <motion.div variants={containerAnimation} viewport="viewport" className={`row p-md-3 mt-5 ${isNightMode ? "" : ""}`}>
 
           <Col className="col-12 col-lg-6 mb-3 w-100">
-            <Row className="flex-lg-row-reverse">
+            <Row className="">
               <Col className="col-12 col-lg-6 img--project-container">
                 <div className="img-fluid">
                   <motion.img
@@ -398,7 +467,7 @@ function Projects() {
         <motion.div variants={containerAnimation} viewport="viewport" className={`row p-md-3 mt-5 ${isNightMode ? "" : ""}`}>
 
           <Col className="col-12 col-lg-6 mb-3 w-100">
-            <Row className="row">
+            <Row className="flex-lg-row-reverse">
               <Col className="col-12 col-lg-6 img--project-container">
                 <div className="img-fluid">
                   <motion.img
@@ -458,6 +527,17 @@ function Projects() {
       {!isNightMode && <motion.div>
         <div className="projects-bg-light" role='img' loading='lazy'></div>
       </motion.div>}
+
+      <motion.div className='text-center mt-5 fw-bold' whileHover={{
+        scale: 1.2,
+        color: 'red',
+        transition: {
+          type: 'spring',
+          stiffness: 350
+        }
+      }}>
+        <a href="https://github.com/adriandotdev" target='_blank' className={`${isNightMode ? 'text-white' : 'text-dark'}`} rel="noreferrer">Visit my GitHub profile to see my Other Projects</a>
+      </motion.div>
     </motion.div>
   )
 }
