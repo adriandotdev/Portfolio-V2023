@@ -14,7 +14,7 @@ import {
     ctaContainer
 } from '../../motions/projects';
 
-function Project({ title, description, img, gif, technologies, links, isReversed }) {
+function Project({ title, description, img, gif, technologies, links, isReversed = false }) {
 
     const { isNightMode } = useContext(ThemeContext);
     const IMG_PATH = "/images/projects";
@@ -60,18 +60,6 @@ function Project({ title, description, img, gif, technologies, links, isReversed
                                         </motion.div>
                                     ))
                                 }
-                                {/* <motion.div variants={fromBottomAnimation} viewport="viewport" className="col-1 m-0 p-0">
-                                    <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C Sharp programming language" />
-                                </motion.div>
-
-                                <motion.div variants={fromBottomAnimation} viewport="viewport" className="col-1 m-0 p-0">
-                                    <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity Game Engine Logo" />
-                                </motion.div>
-
-                                <motion.div variants={fromBottomAnimation} viewport="viewport" className="col-1 m-0 p-0">
-                                    <ProjectTechnology src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android logo" />
-                                </motion.div> */}
-
                             </motion.div>
                         </div>
 
@@ -84,8 +72,12 @@ function Project({ title, description, img, gif, technologies, links, isReversed
                                 >
 
 
-                                {links.site & <motion.a variants={fromBottomAnimation} viewport="viewport" target="blank" className={`btn ${isNightMode ? "btn-outline-contrastColor" : "btn-outline-bodyTextColor"}`} href="https://drive.google.com/file/d/1lxKxh3pmjxMk9wxz70cI5to6__ZQK4_k/view?usp=sharing" role="button"
-                                >APK File</motion.a>}
+                                {
+                                    links.site &&
+                                    <motion.a variants={fromBottomAnimation} viewport="viewport" target="blank" className={`btn ${isNightMode ? "btn-outline-contrastColor" : "btn-outline-bodyTextColor"}`} href={links.site} role="button">
+                                        {links.siteTitle}
+                                    </motion.a>
+                                }
                             </motion.div>
                         </div>
                     </Col>
