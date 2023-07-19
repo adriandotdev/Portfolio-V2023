@@ -536,7 +536,7 @@ function Projects() {
           stiffness: 350
         }
       }}>
-        <a href="https://github.com/adriandotdev" target='_blank' className={`${isNightMode ? 'text-white' : 'text-dark'}`} rel="noreferrer">Visit my GitHub profile to see my Other Projects</a>
+        <a href="https://github.com/adriandotdev" target='_blank' className={`${isNightMode ? 'text-white' : 'text-dark'}`} rel="noreferrer">Visit my GitHub Profile to see my other projects</a>
       </motion.div>
     </motion.div>
   )
