@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Calistoga&family=Montserrat:wght@400;500&family=Secular+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Calistoga&family=Montserrat:wght@400;500&family=Secular+One&display=swap");
 
 :root {
-  --dark: #000B20;
-  --accentDarkColor: #d3bda3;
-  --whiteAccent: #EDF1EF;
-  --secondaryColor: #001D53;
+	--dark: #000b20;
+	--accentDarkColor: #d3bda3;
+	--whiteAccent: #edf1ef;
+	--secondaryColor: #001d53;
 }
 
 /* 
@@ -14,72 +14,72 @@
 
 body,
 html {
-  overflow-x: hidden !important;
-  /* width: 100vh; */
+	overflow-x: hidden !important;
+	/* width: 100vh; */
 }
 
 /* ------------------- SWITCH ICON ------------------------- */
 #switch {
-  background: var(--dark);
-  max-width: 3.5rem;
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
-  margin-right: auto;
-  height: 1.9rem;
-  align-self: center;
-  border-radius: 1.5rem;
-  position: relative;
-  border: 1px solid white;
-  margin-top: .5rem;
+	background: var(--dark);
+	max-width: 3.5rem;
+	display: flex;
+	justify-content: space-between;
+	width: 400px;
+	margin-right: auto;
+	height: 1.9rem;
+	align-self: center;
+	border-radius: 1.5rem;
+	position: relative;
+	border: 1px solid white;
+	margin-top: 0.5rem;
 }
 
 .switch--circle {
-  display: block;
-  height: inherit;
-  width: 1.6rem;
-  height: 1.6rem;
-  padding: .6rem;
-  background-color: white;
-  border-radius: 50%;
-  position: absolute;
-  transition: all 200ms;
+	display: block;
+	height: inherit;
+	width: 1.6rem;
+	height: 1.6rem;
+	padding: 0.6rem;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	transition: all 200ms;
 }
 
 .switch--circle__left {
-  /* right: -2px; */
-  transform: translate(5%, 6%);
+	/* right: -2px; */
+	transform: translate(5%, 6%);
 }
 
 .switch--circle__right {
-  transform: translate(105%, 6%);
+	transform: translate(105%, 6%);
 }
 
 #switch__dark-icon {
-  display: block;
-  width: 1rem;
-  position: absolute;
-  transform: translate(15%, 0%);
+	display: block;
+	width: 1rem;
+	position: absolute;
+	transform: translate(15%, 0%);
 }
 
 #switch__day-icon {
-  display: block;
-  width: 1rem;
-  position: absolute;
-  right: 5%;
-  transform: translate(-5%, 0%);
+	display: block;
+	width: 1rem;
+	position: absolute;
+	right: 5%;
+	transform: translate(-5%, 0%);
 }
 
 /* ------------------------------------- END OF SWITCH ICON ------------------------------------------- */
 
 /* ------------------ FONT FAMILY MONTSERRAT ------------------------ */
 .font-montserrat {
-  font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 .font-montserrat-medium {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
 }
 
 /* ---------------------- END OF FONT MONTSERRAT -------------------- */
@@ -88,128 +88,124 @@ html {
   __________N______________
 */
 .section--heading__divider {
-  position: relative;
-  width: min-content;
-  margin: 0 auto;
-  font-weight: 700;
+	position: relative;
+	width: min-content;
+	margin: 0 auto;
+	font-weight: 700;
 }
 
 .section--heading__divider::after {
-  content: "";
-  display: block;
-  width: 5rem;
-  height: 2px;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  left: 100%;
+	content: "";
+	display: block;
+	width: 5rem;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 100%;
 }
 
 .section--heading__divider::before {
-  content: "";
-  display: block;
-  width: 5rem;
-  height: 2px;
+	content: "";
+	display: block;
+	width: 5rem;
+	height: 2px;
 
-  position: absolute;
-  top: 50%;
-  right: 100%;
+	position: absolute;
+	top: 50%;
+	right: 100%;
 }
 
 .divider__darkmode::before,
 .divider__darkmode::after {
-  background: var(--whiteAccent);
+	background: var(--whiteAccent);
 }
 
 .divider__daymode::before,
 .divider__daymode::after {
-  background: black;
+	background: black;
 }
 
 .hero-subheading--span__daymode {
-
-  position: relative;
-  white-space: nowrap;
-  color: white;
-  font-style: italic;
-  padding-right: .5rem;
+	position: relative;
+	white-space: nowrap;
+	color: white;
+	font-style: italic;
+	padding-right: 0.5rem;
 }
 
 /* --------------------------- END OF HEADING DIVIDER ------------------------ */
 
 /* --------------------------- HERO SECTION ------------------------------ */
 .hero-section {
-  position: relative;
+	position: relative;
 }
 
 .hero-page {
-
-  padding: 6rem 0;
-  padding-bottom: 0;
+	padding: 6rem 0;
+	padding-bottom: 0;
 }
 
 .image-background__darkmode {
-  position: relative;
-  background: var(--accentDarkColor);
-  border-radius: 50%;
-  overflow: hidden;
-  z-index: -2;
+	position: relative;
+	background: var(--accentDarkColor);
+	border-radius: 50%;
+	overflow: hidden;
+	z-index: -2;
 }
 
 .image-background__daymode {
-  position: relative;
-  background: var(--dark);
-  border-radius: 50%;
-  overflow: hidden;
-  z-index: -2;
+	position: relative;
+	background: var(--dark);
+	border-radius: 50%;
+	overflow: hidden;
+	z-index: -2;
 }
 
 .hero--image {
-  display: block;
-  position: relative;
-  /* border-radius: 50%; */
+	display: block;
+	position: relative;
+	/* border-radius: 50%; */
 }
 
 .hero-subheading--span__daymode::before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--dark);
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  transform: skewX(-20deg);
-  z-index: -1;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: var(--dark);
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	transform: skewX(-20deg);
+	z-index: -1;
 }
 
 .hero-subheading--span__nightmode {
-
-  position: relative;
-  white-space: nowrap;
-  color: var(--dark);
-  font-style: italic;
-  padding-right: .5rem;
+	position: relative;
+	white-space: nowrap;
+	color: var(--dark);
+	font-style: italic;
+	padding-right: 0.5rem;
 }
 
 .hero-subheading--span__nightmode::before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--accentDarkColor);
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  transform: skewX(-20deg);
-  z-index: -1;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: var(--accentDarkColor);
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	transform: skewX(-20deg);
+	z-index: -1;
 }
 
-
 #btn--resume {
-  transition: all 200ms;
+	transition: all 200ms;
 }
 
 /* .btn--resume__darkmode:hover {
@@ -224,131 +220,124 @@ html {
   box-shadow: 5px 5px 0px var(--dark);
 } */
 
-
 /* ---------------------------- END OF HERO SECTION ---------------------- */
 
 .about {
-  position: relative;
+	position: relative;
 }
 
 #about--paragraph {
-
-  font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 .skills {
-  position: relative;
+	position: relative;
 }
 
 .certificates {
-  position: relative;
+	position: relative;
 }
 
 .projects {
-  position: relative;
+	position: relative;
 }
 
 .project-icon {
-  transition: all 200ms;
+	transition: all 200ms;
 }
 
 .project-icon:hover {
-  transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 .footer-icon {
-  fill: white;
+	fill: white;
 }
 
 .portfolio-logo {
-  display: block;
-  max-width: 12rem
+	display: block;
+	max-width: 12rem;
 }
 
 .nav-shadow__darkmode {
-  box-shadow: 0px 0px 1px var(--whiteAccent);
+	box-shadow: 0px 0px 1px var(--whiteAccent);
 }
 
 nav::before {
-  content: "";
-  display: block;
-  position: absolute;
-  inset: 0;
-  background: inherit;
-  filter: blur(1px);
-  z-index: -1;
+	content: "";
+	display: block;
+	position: absolute;
+	inset: 0;
+	background: inherit;
+	filter: blur(1px);
+	z-index: -1;
 }
 
 #nav-icon {
-  max-width: 5.5rem;
+	max-width: 5.5rem;
 }
 
 /* Projects */
 .img--project-container div {
-  position: relative;
+	position: relative;
 }
 
 .img--project-container div img:nth-child(2) {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: all 300ms;
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: all 300ms;
 }
 
 .img--project-container:hover div img:nth-child(1) {
-
-  visibility: hidden;
-  opacity: 0;
-  transition: all 300ms;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 300ms;
 }
 
 .img--project-container:hover div img:nth-child(2) {
-
-  visibility: visible;
-  opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
 
-
-
 @media screen and (min-width: 1200px) {
+	#switch {
+		margin-top: 0;
+	}
 
-  #switch {
-    margin-top: 0;
-  }
+	.hero-page {
+		padding: 0;
+		min-height: 100vh;
+		height: 100%;
+	}
 
-  .hero-page {
-    padding: 0;
-    min-height: 100vh;
-    height: 100%;
-  }
+	.hero-page--body__darkmode::before {
+		content: "";
+		display: block;
+		inset: 0;
+		/* background: linear-gradient(to top, var(--dark), var(--secondaryColor)); */
+		position: absolute;
+		z-index: -2;
+	}
 
-  .hero-page--body__darkmode::before {
-    content: "";
-    display: block;
-    inset: 0;
-    /* background: linear-gradient(to top, var(--dark), var(--secondaryColor)); */
-    position: absolute;
-    z-index: -2;
-  }
+	.hero-content {
+		min-height: 100vh;
+		/* position: relative; */
+	}
 
-  .hero-content {
-    min-height: 100vh;
-    /* position: relative; */
-  }
+	#hero-page__subheading {
+		max-width: 45rem;
+	}
 
-  #hero-page__subheading {
-    max-width: 40rem;
-  }
+	.about {
+		min-height: 80vh;
+	}
 
-  .about {
-    min-height: 80vh;
-  }
-
-  .skills {
-    min-height: 90vh;
-  }
+	.skills {
+		min-height: 90vh;
+	}
 }
