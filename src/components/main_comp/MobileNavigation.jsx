@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
 import { useContext } from "react";
-import { FaArrowRight, FaMoon, FaSun } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
 import { ThemeContext } from "../../App";
 
 function MobileNavigation() {
-	const { setMobileMenuOpen, isNightMode, setNightMode, showScrollY } =
-		useContext(ThemeContext);
+	const { setMobileMenuOpen, showScrollY } = useContext(ThemeContext);
 	const mobileMenuContainer = {
 		initial: {
 			x: -1000,
@@ -157,7 +156,7 @@ function MobileNavigation() {
 				</motion.span>
 			))}
 
-			<motion.div
+			{/* <motion.div
 				variants={mobileMenu}
 				tabIndex="0"
 				role="button"
@@ -177,7 +176,7 @@ function MobileNavigation() {
 						className="text-white"
 					/>
 				)}
-			</motion.div>
+			</motion.div> */}
 
 			<div className="backdrop"></div>
 		</motion.div>
