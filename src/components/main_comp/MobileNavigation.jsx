@@ -4,7 +4,8 @@ import { FaArrowRight } from "react-icons/fa6";
 import { ThemeContext } from "../../App";
 
 function MobileNavigation() {
-	const { setMobileMenuOpen, showScrollY } = useContext(ThemeContext);
+	const { setMobileMenuOpen, isNightMode, setNightMode, showScrollY } =
+		useContext(ThemeContext);
 	const mobileMenuContainer = {
 		initial: {
 			x: -1000,
