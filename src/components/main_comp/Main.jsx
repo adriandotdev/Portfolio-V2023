@@ -1,30 +1,27 @@
-import { Container } from 'react-bootstrap';
+import { Container } from "react-bootstrap";
 
-import HeroSection from './HeroSection';
-import About from './About';
-import Skills from './Skills';
-import Certificates from './Certificates';
-import Projects from './Projects';
-import Footer from './Footer';
+import About from "./About";
+import Certificates from "./Certificates";
+import Footer from "./Footer";
+import HeroSection from "./HeroSection";
+import Projects from "./Projects";
+import Skills from "./Skills";
 
 // const HeroSection = lazy(() => import('./HeroSection'));
 
 function Main() {
-
-  return (
-    <>
-      <Container as="main">
-        <HeroSection />
-        <About />
-        <Skills />
-        <Certificates />
-        <Projects />
-
-      </Container>
-      <Footer />
-    </>
-
-  )
+	return (
+		<>
+			<Container as="main">
+				<HeroSection />
+				<About />
+				<Skills />
+				<Certificates />
+				<Projects />
+			</Container>
+			<Footer />
+		</>
+	);
 }
 
-export default Main
+export default Main;
