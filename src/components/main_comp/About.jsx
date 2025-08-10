@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { ListGroup } from "react-bootstrap";
 // import '../../css/main.css';
 import { motion } from "framer-motion";
 import { ThemeContext } from "../../App";
@@ -100,7 +99,7 @@ function About() {
 				<motion.div
 					variants={titleSection}
 					viewport="viewport"
-					className="row align-items-start"
+					className="row align-items-center"
 				>
 					<motion.div
 						variants={image}
@@ -145,29 +144,14 @@ function About() {
 								isNightMode ? "text-contrastColor" : "text-bodyTextColor"
 							}`}
 						>
-							I am a solution-oriented Computer Science graduate from Pamantasan
-							ng Cabuyao, open to entry-level roles in Software
-							Engineering/Development. I acquired hands-on experience through
-							academic coursework and personal projects. Learning on how to
-							learn is crucial in my chosen field, so during my free time, I
-							dedicate myself to learn and create projects that will help expand
-							my knowledge and skills.
-							<br />
-							<br />
-							During my internship, I served as a Front-End Developer Intern,
-							and received an outstanding performance award from the company. I
-							also assigned as a team leader, and given a chance to experience
-							collaboration with other amazing developers. It provided me a
-							sense of accomplishment, and highlighted areas for improvement.
-							<br />
-							<br />
-							Acquiring a college degree is just a first milestone in my
-							professional journey, and I will strongly value to have concrete
-							guidance and support to further improve my skills. Therefore, I am
-							eagerly seeking valuable opportunities that may come my way.
+							A solutions-oriented Software Developer with experience in
+							building reliable and scalable application, as well as creating
+							automated tests to ensure the quality of software I deliver to
+							users. Moreover, I graduated with a Bachelor of Scienc degree in
+							Computer Science from Pamantasan ng Cabuyao in 2023.
 						</motion.p>
 
-						<motion.div
+						{/* <motion.div
 							className="d-xl-none"
 							variants={titleAnimation}
 							viewport="viewport"
@@ -245,8 +229,8 @@ function About() {
 									</p>
 								</ListGroup.Item>
 							</ListGroup>
-						</motion.div>
-						<motion.div
+						</motion.div> */}
+						{/* <motion.div
 							className="d-none d-xl-block"
 							variants={titleAnimation}
 							viewport="viewport"
@@ -299,7 +283,7 @@ function About() {
 									</span>
 								</li>
 							</ul>
-						</motion.div>
+						</motion.div> */}
 					</motion.div>
 				</motion.div>
 			</motion.div>
