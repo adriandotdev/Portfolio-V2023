@@ -105,23 +105,10 @@ function Navbar() {
 						<div className="line"></div>
 						<div className="line"></div>
 					</div>
-					{/* <div className="col-2 ms-md-auto">
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-          </div> */}
 				</div>
 
 				<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div className="navbar-nav d-flex column gap-4 d-lg-flex gap-lg-4 align-items-lg-center pt-4 pb-4 pt-lg-0 pb-lg-0">
+					<div className="navbar-nav d-flex column gap-4 d-lg-flex gap-lg-6 align-items-lg-center pt-4 pb-4 pt-lg-0 pb-lg-0">
 						{/* Navbar Items */}
 						{items.map((item) => (
 							<a
@@ -149,7 +136,7 @@ function Navbar() {
 
 						{/* Toggle Button (Day/Night Mode) */}
 						<div
-							className="focusable"
+							className="focusable d-none"
 							role="button"
 							tabIndex="0"
 							onClick={() => {
