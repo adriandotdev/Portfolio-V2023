@@ -1,61 +1,209 @@
+import { motion } from "framer-motion";
 import { useContext } from "react";
 import { Col, OverlayTrigger, Tooltip } from "react-bootstrap";
-import ProjectTechnology from "../sub_comp/ProjectTechnology";
 import { ThemeContext } from "../../App";
-import { motion } from "framer-motion";
+import ProjectTechnology from "../sub_comp/ProjectTechnology";
+
+const containerAnimation = {
+	initial: {
+		opacity: 0,
+	},
+	whileInView: {
+		opacity: 1,
+		transition: {
+			staggerChildren: 0.1,
+			delayChildren: 0.2,
+		},
+	},
+	viewport: {
+		once: true,
+	},
+};
+
+const titleAnimation = {
+	initial: {
+		y: 150,
+		opacity: 0,
+	},
+	whileInView: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			type: "spring",
+			stiffness: 150,
+			duration: 0.3,
+		},
+	},
+	viewport: {
+		once: true,
+	},
+};
+
+const techContainer = {
+	initial: {
+		opacity: 0,
+	},
+	whileInView: {
+		opacity: 1,
+		transition: {
+			staggerChildren: 0.05,
+		},
+	},
+	viewport: {
+		once: true,
+	},
+};
+
+const technologies = [
+	{
+		tech: "TypeScript",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+		alt: "TypeScript",
+	},
+	{
+		tech: "ReactJS",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+		alt: "React.js Logo",
+	},
+	{
+		tech: "MongoDB",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+		alt: "MongoDB logo",
+	},
+	{
+		tech: "MySQL",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
+		alt: "MySQL Logo",
+	},
+	{
+		tech: "ExpressJS",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+		alt: "Expres.js Logo",
+	},
+	{
+		tech: "NodeJS",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+		alt: "Node.js Logo",
+	},
+	{
+		tech: "JavaScript",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+		alt: "JavaScript Logo",
+	},
+	{
+		tech: "TailwindCSS",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+		alt: "TailwindCSS CSS Framework Logo",
+	},
+	{
+		tech: "Bootstrap",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+		alt: "Bootstrap CSS Framework Logo",
+	},
+	{
+		tech: "SASS",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+		alt: "SASS CSS Preprocessor Logo",
+	},
+	{
+		tech: "Java",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+		alt: "Java Programming Language Logo",
+	},
+	{
+		tech: "CSharp",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+		alt: "C Sharp Programming Language Logo",
+	},
+	{
+		tech: "Git",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+		alt: "Git Version Control Logo",
+	},
+	{
+		tech: "Visual Studio Code",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+		alt: "Visual Studio Code Logo",
+	},
+	{
+		tech: "PostgreSQL",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+		alt: "PostgreSQL",
+	},
+	{
+		tech: "Postman",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+		alt: "Postman",
+	},
+	{
+		tech: "tRPC",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trpc/trpc-original.svg",
+		alt: "tRPC",
+	},
+	{
+		tech: "NextJS",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+		alt: "NextJS",
+	},
+	{
+		tech: "React Native",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original-wordmark.svg",
+		alt: "React Native",
+	},
+	{
+		tech: "Linux",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+		alt: "Linux",
+	},
+	{
+		tech: "CypressIO",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original.svg",
+		alt: "CypressIO",
+	},
+	{
+		tech: "Jest",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
+		alt: "Jest",
+	},
+	{
+		tech: "GitHub",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+		alt: "GitHub",
+	},
+	{
+		tech: "GitLab",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg",
+		alt: "GitLab",
+	},
+	{
+		tech: "Expo",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg",
+		alt: "Expo",
+	},
+	{
+		tech: "GraphQL",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
+		alt: "GraphQL",
+	},
+	{
+		tech: "Docker",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+		alt: "Docker",
+	},
+	{
+		tech: "SocketIO",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg",
+		alt: "SocketIO",
+	},
+	{
+		tech: "Notion",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg",
+		alt: "Notion",
+	},
+];
 
 function Skills() {
 	const { isNightMode, filters } = useContext(ThemeContext);
-
-	const containerAnimation = {
-		initial: {
-			opacity: 0,
-		},
-		whileInView: {
-			opacity: 1,
-			transition: {
-				staggerChildren: 0.1,
-				delayChildren: 0.2,
-			},
-		},
-		viewport: {
-			once: true,
-		},
-	};
-
-	const titleAnimation = {
-		initial: {
-			y: 150,
-			opacity: 0,
-		},
-		whileInView: {
-			y: 0,
-			opacity: 1,
-			transition: {
-				type: "spring",
-				stiffness: 150,
-				duration: 0.3,
-			},
-		},
-		viewport: {
-			once: true,
-		},
-	};
-
-	const techContainer = {
-		initial: {
-			opacity: 0,
-		},
-		whileInView: {
-			opacity: 1,
-			transition: {
-				staggerChildren: 0.05,
-			},
-		},
-		viewport: {
-			once: true,
-		},
-	};
 
 	return (
 		<motion.div
@@ -195,327 +343,28 @@ function Skills() {
 					viewport="viewport"
 					className="container d-flex justify-content-center flex-wrap gap-3 mt-4"
 				>
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<Col>
-							<OverlayTrigger
-								placement="bottom"
-								overlay={<Tooltip id="React.js">React.js</Tooltip>}
-							>
-								<span>
-									<ProjectTechnology
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-										alt="React.js Logo"
-									/>
-								</span>
-							</OverlayTrigger>
-						</Col>
-					</motion.div>
-
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<Col>
-							<OverlayTrigger
-								placement="bottom"
-								overlay={<Tooltip id="MySQL">MongoDB</Tooltip>}
-							>
-								<span>
-									<ProjectTechnology
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-										alt="MongoDB logo"
-									/>
-								</span>
-							</OverlayTrigger>
-						</Col>
-					</motion.div>
-
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<Col>
-							<OverlayTrigger
-								placement="bottom"
-								overlay={<Tooltip id="MySQL">MySQL</Tooltip>}
-							>
-								<span>
-									<ProjectTechnology
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
-										alt="MySQL Logo"
-									/>
-								</span>
-							</OverlayTrigger>
-						</Col>
-					</motion.div>
-
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<Col>
-							<OverlayTrigger
-								placement="bottom"
-								overlay={<Tooltip id="Express.js">Express.js</Tooltip>}
-							>
-								<span>
-									<ProjectTechnology
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
-										alt="Expres.js Logo"
-									/>
-								</span>
-							</OverlayTrigger>
-						</Col>
-					</motion.div>
-
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<Col>
-							<OverlayTrigger
-								placement="bottom"
-								overlay={<Tooltip id="Node.js">Node.js</Tooltip>}
-							>
-								<span>
-									<ProjectTechnology
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-										alt="Node.js Logo"
-									/>
-								</span>
-							</OverlayTrigger>
-						</Col>
-					</motion.div>
-
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<Col>
-							<OverlayTrigger
-								placement="bottom"
-								overlay={<Tooltip id="HTML5">HTML5</Tooltip>}
-							>
-								<span>
-									<ProjectTechnology
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-										alt="HTML Logo"
-									/>
-								</span>
-							</OverlayTrigger>
-						</Col>
-					</motion.div>
-
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<Col>
-							<OverlayTrigger
-								placement="bottom"
-								overlay={<Tooltip id="CSS3">CSS3</Tooltip>}
-							>
-								<span>
-									<ProjectTechnology
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-										alt="CSS Logo"
-									/>
-								</span>
-							</OverlayTrigger>
-						</Col>
-					</motion.div>
-
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<Col>
-							<OverlayTrigger
-								placement="bottom"
-								overlay={<Tooltip id="JavaScript">JavaScript</Tooltip>}
-							>
-								<span>
-									<ProjectTechnology
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-										alt="JavaScript Logo"
-									/>
-								</span>
-							</OverlayTrigger>
-						</Col>
-					</motion.div>
-
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<Col>
-							<OverlayTrigger
-								placement="bottom"
-								overlay={<Tooltip id="TailwindCSS">TailwindCSS</Tooltip>}
-							>
-								<span>
-									<ProjectTechnology
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-										alt="TailwindCSS CSS Framework Logo"
-									/>
-								</span>
-							</OverlayTrigger>
-						</Col>
-					</motion.div>
-
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<Col>
-							<OverlayTrigger
-								placement="bottom"
-								overlay={<Tooltip id="Bootstrap">Bootstrap</Tooltip>}
-							>
-								<span>
-									<ProjectTechnology
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-										alt="Bootstrap CSS Framework Logo"
-									/>
-								</span>
-							</OverlayTrigger>
-						</Col>
-					</motion.div>
-
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<OverlayTrigger
-							placement="bottom"
-							overlay={<Tooltip id="SCSS">SASS</Tooltip>}
+					{technologies.map((technology, index) => (
+						<motion.div
+							key={index}
+							variants={titleAnimation}
+							viewport="viewport"
+							className="row"
 						>
-							<span>
-								<ProjectTechnology
-									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-									alt="SASS CSS Preprocessor Logo"
-								/>
-							</span>
-						</OverlayTrigger>
-					</motion.div>
-
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<Col>
-							<OverlayTrigger
-								placement="bottom"
-								overlay={<Tooltip id="Java Programming">Java</Tooltip>}
-							>
-								<span>
-									<ProjectTechnology
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-										alt="Java Programming Language Logo"
-									/>
-								</span>
-							</OverlayTrigger>
-						</Col>
-					</motion.div>
-
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<Col>
-							<OverlayTrigger
-								placement="bottom"
-								overlay={<Tooltip id="Java Programming">C-Sharp</Tooltip>}
-							>
-								<span>
-									<ProjectTechnology
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-										alt="C Sharp Programming Language Logo"
-									/>
-								</span>
-							</OverlayTrigger>
-						</Col>
-					</motion.div>
-
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<Col>
-							<OverlayTrigger
-								placement="bottom"
-								overlay={
-									<Tooltip id="Unity Game Engine">Unity Game Engine</Tooltip>
-								}
-							>
-								<span>
-									<ProjectTechnology
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
-										alt="Unity Game Engine Logo"
-									/>
-								</span>
-							</OverlayTrigger>
-						</Col>
-					</motion.div>
-
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<Col>
-							<OverlayTrigger
-								placement="bottom"
-								overlay={<Tooltip id="Git">Git</Tooltip>}
-							>
-								<span>
-									<ProjectTechnology
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-										alt="Git Version Control Logo"
-									/>
-								</span>
-							</OverlayTrigger>
-						</Col>
-					</motion.div>
-
-					<motion.div
-						variants={titleAnimation}
-						viewport="viewport"
-						className="row"
-					>
-						<Col>
-							<OverlayTrigger
-								placement="bottom"
-								overlay={
-									<Tooltip id="Visual Studio Code">Vistual Studio Code</Tooltip>
-								}
-							>
-								<span>
-									<ProjectTechnology
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-										alt="Visual Studio Code Logo"
-									/>
-								</span>
-							</OverlayTrigger>
-						</Col>
-					</motion.div>
+							<Col>
+								<OverlayTrigger
+									placement="bottom"
+									overlay={<Tooltip id={index}>{technology.tech}</Tooltip>}
+								>
+									<span>
+										<ProjectTechnology
+											src={technology.src}
+											alt={technology.alt}
+										/>
+									</span>
+								</OverlayTrigger>
+							</Col>
+						</motion.div>
+					))}
 				</motion.div>
 			</motion.div>
 
