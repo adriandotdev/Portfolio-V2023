@@ -160,13 +160,13 @@ function HeroSection() {
 								whileInView="whileInView"
 								whileHover="whileHover"
 								viewport="viewport"
-								target="blank"
 								className={`btn btn-lg ${
 									isNightMode
 										? "btn-darkModeAccentColor btn--resume__darkmode"
 										: "btn-darkSecondary btn--resume__daymode"
 								}`}
-								href="https://drive.google.com/file/d/1tkdPUFXyu-KPXq8O7Mk8FOFm2m3blzlp/view?usp=sharing"
+								href="/ADRIAN_NADS_MARCELO_(SOFTWARE_DEVELOPER).pdf"
+								download
 								role="button"
 							>
 								View My Resume
