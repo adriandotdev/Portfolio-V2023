@@ -4,7 +4,7 @@ function ProjectTechnology({ src, alt }) {
 			<img
 				style={{
 					filter: `
-            drop-shadow(0 0 0.5px white)
+            drop-shadow(0 0 1px white)
         `,
 				}}
 				className=" h-100 img-fluid tech"
