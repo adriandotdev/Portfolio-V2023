@@ -147,7 +147,7 @@ function About() {
 							A solutions-oriented Software Developer with experience in
 							building reliable and scalable application, as well as creating
 							automated tests to ensure the quality of software I deliver to
-							users. Moreover, I graduated with a Bachelor of Scienc degree in
+							users. Moreover, I graduated with a Bachelor of Science degree in
 							Computer Science from Pamantasan ng Cabuyao in 2023.
 						</motion.p>
 
