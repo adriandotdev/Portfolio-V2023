@@ -4,8 +4,8 @@ import { useContext } from "react";
 // User Defined Components
 import Project from "../sub_comp/Project";
 
-import { ThemeContext } from "../../App";
 import { motion } from "framer-motion";
+import { ThemeContext } from "../../App";
 import {
 	containerAnimation,
 	fromBottomAnimation,
@@ -50,6 +50,43 @@ function Projects() {
 			</motion.div>
 
 			<motion.div variants={containerAnimation} viewport="viewport">
+				{/* The Daily Bytes */}
+				<Project
+					title="The Daily Bytes"
+					description="The Daily Bytes is a blog platform integrated with Tiptap editor that supports Notion-style editing."
+					img={{
+						src: "/The_Daily_Bytes.png",
+						alt: "The Daily Bytes",
+					}}
+					gif={{
+						src: "/The_Daily_Bytes.png",
+						alt: "The Daily Bytes",
+					}}
+					technologies={[
+						{
+							src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+							alt: "NextJS",
+						},
+						{
+							src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+							alt: "PostgreSQL",
+						},
+						{
+							src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+							alt: "TailwindCSS",
+						},
+						{
+							src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+							alt: "Supabase",
+						},
+					]}
+					links={{
+						sourceCode: "https://github.com/adriandotdev/blog-site-nextjs",
+						site: "https://blog-site-nextjs-adriandotdevs-projects.vercel.app/",
+						siteTitle: "Live Site",
+					}}
+				/>
+
 				{/* Kayamanan: The Hunt for Philippine Treasures */}
 				<Project
 					title="Kayamanan: The Hunt for Philippine Treasures"
@@ -82,6 +119,7 @@ function Projects() {
 						site: "https://drive.google.com/file/d/1lxKxh3pmjxMk9wxz70cI5to6__ZQK4_k/view?usp=sharing",
 						siteTitle: "APK File",
 					}}
+					isReversed
 				/>
 
 				<Project
@@ -121,7 +159,6 @@ function Projects() {
 						sourceCode:
 							"https://github.com/adriandotdev/yanyan-store/tree/master",
 					}}
-					isReversed={true}
 				/>
 
 				{/* Food Hub Ordering System Project */}
@@ -162,84 +199,7 @@ function Projects() {
 						sourceCode:
 							"https://github.com/adriandotdev/Food-Hub-Software-Engineering-",
 					}}
-				/>
-
-				{/* Flashcards */}
-				<Project
-					title="Flashcards"
-					description="This is a simple C.R.U.D app that allows the user to create a set of questions based on their chosen category. Through this project, I learned how to use the 'useReducer' hook to handle complex states."
-					img={{
-						src: "/Flashcard.png",
-						alt: "Flashcard sample user interface",
-					}}
-					gif={{ src: "/flashcard.gif", alt: "Flashcard sample ouput" }}
-					technologies={[
-						{
-							src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-							alt: "react.js logo",
-						},
-						{
-							src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-							alt: "TailwindCSS CSS Framework Logo",
-						},
-					]}
-					links={{
-						sourceCode: "https://github.com/adriandotdev/flashcard-vite",
-						site: "https://flashcards-go.netlify.app/",
-						siteTitle: "Live Site",
-					}}
-					isReversed={true}
-				/>
-
-				{/* Recipe App */}
-				<Project
-					title="Recipe Search App using API"
-					description="A recipe app that allows user to search for their desire food, and get its recipes. Utilized Edamam API to get the list of recipes."
-					img={{
-						src: "/Recipe_Search_App.png",
-						alt: "Recipe Search App sample user interface",
-					}}
-					gif={{ src: "/recipe.gif", alt: "Recipe Search App sample output" }}
-					technologies={[
-						{
-							src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-							alt: "react.js logo",
-						},
-						{
-							src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-							alt: "TailwindCSS CSS Framework Logo",
-						},
-					]}
-					links={{
-						sourceCode: "https://github.com/adriandotdev/Search-Recipe-App",
-						site: "https://adrian-recipe-app.vercel.app/",
-						siteTitle: "Live Site",
-					}}
-				/>
-
-				{/* YGO Programming Center */}
-				<Project
-					title="YGO Programming Center"
-					description="A desktop application for course enrollment system. This is our programming 2 project. Utilized Java Swing for creating Graphical User Interface. I learned here how different UI components works such as ComboBox, RadioButtons, Checkboxes, Alerts, Lists and Tables."
-					img={{
-						src: "/YGO.png",
-						alt: "YGO Programming Center sample user interface",
-					}}
-					gif={{
-						src: "/Enrolling Courses.gif",
-						alt: "YGO Programming Center sample output",
-					}}
-					technologies={[
-						{
-							src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-							alt: "Java",
-						},
-					]}
-					links={{
-						sourceCode:
-							"https://github.com/adriandotdev/academic-courseworks/tree/ygo-programming-center-gui",
-					}}
-					isReversed={true}
+					isReversed
 				/>
 			</motion.div>
 
