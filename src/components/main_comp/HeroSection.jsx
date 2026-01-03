@@ -165,7 +165,7 @@ function HeroSection() {
 										? "btn-darkModeAccentColor btn--resume__darkmode"
 										: "btn-darkSecondary btn--resume__daymode"
 								}`}
-								href="/ADRIAN_NADS_MARCELO_(SOFTWARE_DEVELOPER).pdf"
+								href="/ADRIAN_NADS_MARCELO_RESUME.pdf"
 								download
 								role="button"
 							>
