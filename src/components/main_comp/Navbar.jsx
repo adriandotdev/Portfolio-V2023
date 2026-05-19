@@ -50,10 +50,6 @@ function Navbar() {
 			title: "Skills",
 		},
 		{
-			scrollSpy: "#scrollspyCertificates",
-			title: "Certificates",
-		},
-		{
 			scrollSpy: "#scrollspyProjects",
 			title: "Projects",
 		},

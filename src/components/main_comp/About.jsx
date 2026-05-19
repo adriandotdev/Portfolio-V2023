@@ -140,15 +140,43 @@ function About() {
 							variants={titleAnimation}
 							viewport="viewport"
 							id="about--paragraph"
-							className={`text-center text-xl-start ${
+							className={`text-center text-xl-start lh-lg ${
 								isNightMode ? "text-contrastColor" : "text-bodyTextColor"
 							}`}
 						>
-							A solutions-oriented Software Developer with experience in
-							building reliable and scalable application, as well as creating
-							automated tests to ensure the quality of software I deliver to
-							users. Moreover, I graduated with a Bachelor of Science degree in
-							Computer Science from Pamantasan ng Cabuyao in 2023.
+							I am a solutions-oriented Full Stack Developer. I have experience
+							building reliable and scalable applications. Throughout my career
+							I have experience in developing and integrating APIs, CI/CD
+							pipeline, and automation testing. I am also dependable and
+							reliable in delivering solutions in a timely manner.
+						</motion.p>
+
+						<motion.p
+							variants={titleAnimation}
+							viewport="viewport"
+							id="about--paragraph"
+							className={`text-center text-xl-start lh-lg ${
+								isNightMode ? "text-contrastColor" : "text-bodyTextColor"
+							}`}
+						>
+							I can also effectively work independently and as a team ensuring
+							that project and team goals are met. Moreover, I have experience
+							developing and deploying applications on the cloud, particularly
+							in AWS.
+						</motion.p>
+
+						<motion.p
+							variants={titleAnimation}
+							viewport="viewport"
+							id="about--paragraph"
+							className={`text-center text-xl-start lh-lg ${
+								isNightMode ? "text-contrastColor" : "text-bodyTextColor"
+							}`}
+						>
+							Lastly, I am always curious and eager to learn new things that can
+							help me grow as a developer. During my free time, I always make
+							time to create personal projects and even solutions to daily life
+							problems whenever possible.
 						</motion.p>
 
 						{/* <motion.div

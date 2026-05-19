@@ -1,7 +1,6 @@
 import { Container } from "react-bootstrap";
 
 import About from "./About";
-import Certificates from "./Certificates";
 import Footer from "./Footer";
 import HeroSection from "./HeroSection";
 import Projects from "./Projects";
@@ -16,7 +15,7 @@ function Main() {
 				<HeroSection />
 				<About />
 				<Skills />
-				<Certificates />
+				{/* <Certificates /> */}
 				<Projects />
 			</Container>
 			<Footer />

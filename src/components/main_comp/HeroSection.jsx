@@ -149,7 +149,7 @@ function HeroSection() {
 										: "hero-subheading--span__daymode"
 								}`}
 							>
-								Software Developer
+								Software Engineer
 							</span>{" "}
 							from the Philippines
 						</motion.p>
@@ -165,11 +165,12 @@ function HeroSection() {
 										? "btn-darkModeAccentColor btn--resume__darkmode"
 										: "btn-darkSecondary btn--resume__daymode"
 								}`}
-								href="/ADRIAN_NADS_MARCELO_RESUME.pdf"
-								download
+								href="https://www.linkedin.com/in/adrianmarcelo/"
+								target="_blank"
+								rel="noreferrer"
 								role="button"
 							>
-								View My Resume
+								Connect With Me
 							</motion.a>
 						</div>
 					</motion.div>

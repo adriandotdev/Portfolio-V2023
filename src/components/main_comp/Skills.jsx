@@ -106,11 +106,6 @@ const technologies = [
 		alt: "SASS CSS Preprocessor Logo",
 	},
 	{
-		tech: "Java",
-		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-		alt: "Java Programming Language Logo",
-	},
-	{
 		tech: "CSharp",
 		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
 		alt: "C Sharp Programming Language Logo",
@@ -200,6 +195,26 @@ const technologies = [
 		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg",
 		alt: "Notion",
 	},
+	{
+		tech: "AWS",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+		alt: "AWS logo",
+	},
+	{
+		tech: "GitHub Actions",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg",
+		alt: "GitHub actions logo",
+	},
+	{
+		tech: "Bash",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg",
+		alt: "Bash logo",
+	},
+	{
+		tech: "NGINX",
+		src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg",
+		alt: "Nginx logo",
+	},
 ];
 
 function Skills() {
@@ -222,7 +237,7 @@ function Skills() {
 						isNightMode ? "text-darkModeAccentColor" : "text-dark"
 					}`}
 				>
-					Skills and Technologies
+					Skills
 				</motion.h1>
 
 				<motion.p
@@ -244,7 +259,7 @@ function Skills() {
 				viewport="viewport"
 				className="row row-cols-1 row-cols-xl-3"
 			>
-				<Col>
+				{/* <Col>
 					<motion.div
 						variants={titleAnimation}
 						viewport="viewport"
@@ -333,7 +348,7 @@ function Skills() {
 							and efficiency.
 						</p>
 					</motion.div>
-				</Col>
+				</Col> */}
 			</motion.div>
 
 			<motion.div className="mt-5">
@@ -341,7 +356,7 @@ function Skills() {
 				<motion.div
 					variants={techContainer}
 					viewport="viewport"
-					className="container d-flex justify-content-center flex-wrap gap-3 mt-4"
+					className="container d-flex justify-content-center flex-wrap gap-5 mt-4"
 				>
 					{technologies.map((technology, index) => (
 						<motion.div
