@@ -68,7 +68,7 @@ function Project({
 						<motion.p
 							variants={fromRightAnimation}
 							viewport="viewport"
-							className={`text-lg-start font-montserrat ${
+							className={`text-lg-start font-montserrat lh-lg ${
 								isNightMode ? "text-contrastColor" : "text-bodyTextColor"
 							}`}
 						>

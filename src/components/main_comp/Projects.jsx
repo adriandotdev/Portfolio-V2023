@@ -50,6 +50,55 @@ function Projects() {
 			</motion.div>
 
 			<motion.div variants={containerAnimation} viewport="viewport">
+				{/* Suki */}
+				<Project
+					title="Suki"
+					description="A serverless application to track and manage our sari-sari store's products and sales. Due to the frequent changes in prices, we always tend to forget the prices and we're having difficulty managing them. While exploring AWS, this app solves our daily problems by knowing the prices of each product and having the ability to track specific transactions correctly."
+					img={{
+						src: "/suki.png",
+						alt: "The Daily Bytes",
+					}}
+					gif={{
+						src: "/suki.png",
+						alt: "The Daily Bytes",
+					}}
+					technologies={[
+						{
+							src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+							alt: "NextJS",
+						},
+						{
+							src: "/svg/aws-lambda.svg",
+							alt: "AWS Lambda",
+						},
+						{
+							src: "/svg/amazon-api-gateway.svg",
+							alt: "Amazon API Gateway",
+						},
+						{
+							src: "/svg/amazon-dynamodb.svg",
+							alt: "Amazon DynamoDB",
+						},
+						{
+							src: "/svg/amazon-cognito.svg",
+							alt: "Amazon Cognito",
+						},
+						{
+							src: "/svg/aws-amplify.svg",
+							alt: "AWS Amplify",
+						},
+						{
+							src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+							alt: "TailwindCSS",
+						},
+					]}
+					links={{
+						sourceCode: "https://github.com/adriandotdev/aws-fe-app-nextjs",
+						site: "https://github.com/adriandotdev/aws-serverless-application-practice",
+						siteTitle: "View Backend Source Code",
+					}}
+				/>
+
 				{/* The Daily Bytes */}
 				<Project
 					title="The Daily Bytes"
@@ -85,6 +134,7 @@ function Projects() {
 						site: "https://blog-site-nextjs-adriandotdevs-projects.vercel.app/",
 						siteTitle: "Live Site",
 					}}
+					isReversed
 				/>
 
 				{/* Kayamanan: The Hunt for Philippine Treasures */}
@@ -119,10 +169,9 @@ function Projects() {
 						site: "https://drive.google.com/file/d/1lxKxh3pmjxMk9wxz70cI5to6__ZQK4_k/view?usp=sharing",
 						siteTitle: "APK File",
 					}}
-					isReversed
 				/>
 
-				<Project
+				{/* <Project
 					title="Yan-Yan's Store: PMS"
 					description="A Project Management System for our sari-sari store. Here, I applied what I learned in NodeJS, and ExpressJS such as Authorization, and Authentication using http-cookie. I mostly learned by doing this is the CRUD functionality of MongoDB."
 					img={{
@@ -159,7 +208,8 @@ function Projects() {
 						sourceCode:
 							"https://github.com/adriandotdev/yanyan-store/tree/master",
 					}}
-				/>
+					isReversed
+				/> */}
 
 				{/* Food Hub Ordering System Project */}
 				<Project
